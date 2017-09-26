@@ -1,0 +1,42 @@
+fileFormatVersion: 2
+guid: 1d84fbd8cdf2a9a49888096ce6bc1df7
+timeCreated: 1502989694
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - primera: {instanceID: 0}
+  - segunda: {instanceID: 0}
+  - tercera: {instanceID: 0}
+  - cuarta: {instanceID: 0}
+  - quinta: {instanceID: 0}
+  - sexta: {instanceID: 0}
+  - septima: {instanceID: 0}
+  - octava: {instanceID: 0}
+  - novena: {instanceID: 0}
+  - decima: {instanceID: 0}
+  - a1: {fileID: 21300000, guid: 2416a414d80425e4ca7a21f63f0fcefe, type: 3}
+  - a2: {fileID: 21300000, guid: 21b8d061e4bfac145b832105b544ae42, type: 3}
+  - a3: {fileID: 21300000, guid: e3e53064dd2cd70438e82c4df471ee19, type: 3}
+  - a4: {fileID: 21300000, guid: 8be55bd41d0a1664ca5218719557876b, type: 3}
+  - a5: {fileID: 21300000, guid: 117743b44ebab7847a74a5a10f51912c, type: 3}
+  - a6: {fileID: 21300000, guid: bb454760170072b488110b456c2c9eee, type: 3}
+  - a7: {fileID: 21300000, guid: 38507c813f749e04f8a66fcb0010abfb, type: 3}
+  - a8: {fileID: 21300000, guid: 2f80e68c4bcacd5458b63ab44532bbe8, type: 3}
+  - a9: {fileID: 21300000, guid: 2e8eb119a4dfa204dba4a7bfb83cebbd, type: 3}
+  - a10: {fileID: 21300000, guid: 5e3dcde3ff67d31468e5915e676c7190, type: 3}
+  - a11: {fileID: 21300000, guid: b95114b004e744c40accdc71efea7a14, type: 3}
+  - a12: {fileID: 21300000, guid: d4636076bd295884ebb002d8ae9d297b, type: 3}
+  - a13: {fileID: 21300000, guid: 780273f1d3d62c54ab627a1b937cec3d, type: 3}
+  - a14: {fileID: 21300000, guid: 43f36115a7cc89547b6c04fb2cc0b70f, type: 3}
+  - a15: {fileID: 21300000, guid: d98a3dfdd9910aa48becad3c2c677598, type: 3}
+  - a16: {fileID: 21300000, guid: 100080923dd91fd41869c0652d9de6ae, type: 3}
+  - a17: {fileID: 21300000, guid: c4649ce75aabdfc4a842ecf17720e064, type: 3}
+  - a18: {fileID: 21300000, guid: 16f2ce271a44db34d8a026521ed25c84, type: 3}
+  - a19: {fileID: 21300000, guid: 9d475eb1b798bcd44977b41d339b9752, type: 3}
+  - a20: {fileID: 21300000, guid: 0dac7df332270ac4ba679dc173cbcfd5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
