@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Level\ManoJuego.cs">
+    <Files>
+      <File FileName="Assets\Script\CamMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Cajas.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Level\CajaCarta.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Level\Cartas.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Level\Cards.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Level\vender.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Level\Mano.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Level\ManoJuego.cs" Line="184" Column="54" />
+      <File FileName="Assets\Script\Hero\Sonidos.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

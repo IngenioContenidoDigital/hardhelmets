@@ -1,0 +1,761 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{445E0423-95A4-92DB-C390-C0A8CC0D61D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_0;UNITY_2017_1;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Bleed\BleedBehavior.cs" />
+     <Compile Include="Assets\Bleed\Demo\SimpleFire.cs" />
+     <Compile Include="Assets\Bleed\Demo\SimplePlayer.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+     <Compile Include="Assets\FX Blood &amp; Slashes\SelfDestruct.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX2_Demo.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutodestructWhenNoChildren.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_ShurikenThreadFix.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX2_AutoRotate.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Spawn System\CFX_SpawnSystem.cs" />
+     <Compile Include="Assets\MaxP\Shaders\Scripts\DirtyLensFlare.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\__Effects (Trails) Examples\Scripts\AlwaysForward.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\__Effects (Trails) Examples\Scripts\ConstForce.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\__Effects (Trails) Examples\Scripts\DestroyAfterTime.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\__Effects (Trails) Examples\Scripts\FPSController.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\__Effects (Trails) Examples\Scripts\FPSWeaponTrigger.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\__Effects (Trails) Examples\Scripts\MouseFollower.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\__Effects (Trails) Examples\Scripts\Orbiter.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\__Effects (Trails) Examples\Scripts\PitchShifter.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\__Effects (Trails) Examples\Scripts\TankAlwaysForward.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\__Effects (Trails) Examples\Scripts\TankController.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\__Effects (Trails) Examples\Scripts\TankProjectile.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\__Effects (Trails) Examples\Scripts\TankTranslator.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\__Effects (Trails) Examples\Scripts\TankWeaponController.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\Effects\Trails\SmokePlume.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\Effects\Trails\SmokeTrail.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\Effects\Trails\SmoothTrail.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\Effects\Trails\Trail.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\Effects\Trails\TrailRenderer_Base.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\Shared\Generic\VersionInformation.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\Shared\Utillities\CircularBuffer.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\Shared\Utillities\GizmosExtra.cs" />
+     <Compile Include="Assets\PigeonCoopToolkit\Shared\Utillities\Range.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\BloomComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\FogComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\GrainComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\TaaComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\BloomModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\DitheringModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\FogModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\GrainModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\UserLutModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\VignetteModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingContext.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingProfile.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+     <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DAddCameraTargetAction.cs" />
+     <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DAdjustCameraTargetInfluenceAction.cs" />
+     <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DApplyInfluenceAction.cs" />
+     <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DApplyInfluencesTimedAction.cs" />
+     <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DCinematicsToggleAction.cs" />
+     <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DMoveCameraInstantlyToPositionAction.cs" />
+     <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DRemoveCameraTargetAction.cs" />
+     <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DShakeAction.cs" />
+     <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DShakeWithPresetAction.cs" />
+     <Compile Include="Assets\ProCamera2D\3rd Party Plugins Support\PlayMakerActions\ProCamera2DShakeWithValuesAction.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\BasePC2D.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\BaseTrigger.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\BoundariesAnimator.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\CameraTarget.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\EnumMovementAxis.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\EnumUpdateType.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\IPositionDeltaChanger.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\IPositionOverrider.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\IPostMover.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\IPreMover.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\ISizeDeltaChanger.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\ISizeOverrider.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\KDTree.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\MoveInColliderBoundaries.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\Utils\EditorPrefsX.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\Utils\PrefsData.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Core\Utils\Utils.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DCameraWindow.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DCinematics.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DForwardFocus.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DGeometryBoundaries.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DLimitDistance.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DLimitSpeed.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DNumericBoundaries.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DPanAndZoom.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DParallax.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DPixelPerfect.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DPointerInfluence.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DRails.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DRepeater.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DShake.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DSpeedBasedZoom.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DTransitionsFX.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Extensions\ProCamera2DZoomToFitTargets.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Helpers\Letterbox\ProCamera2DLetterbox.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Helpers\Parallax\ProCamera2DParallaxObject.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Helpers\Pixel Perfect\ProCamera2DPixelPerfectSprite.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Triggers\ProCamera2DTriggerBoundaries.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Triggers\ProCamera2DTriggerInfluence.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Triggers\ProCamera2DTriggerRails.cs" />
+     <Compile Include="Assets\ProCamera2D\Code\Triggers\ProCamera2DTriggerZoom.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\Platformer\Scripts\Player\PlayerController.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\Platformer\Scripts\Player\PlayerInput.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\Platformer\Scripts\Player\PlayerInputBot.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\Platformer\Scripts\ToggleCinematics.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\Platformer\Scripts\ToggleTransitionsFX.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Bullet.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Door.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\DoorKey.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemyAttack.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemyFSM.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemyPatrol.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemySight.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\EnemyWander.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Enemy\PatrolWaypoint.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\GameOver.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Goal.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\ObjectMove.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\ObjectRotate.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Player\PlayerFire.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Player\PlayerHealth.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Player\PlayerInput.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Pool\Pool.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\Pool\PoolMember.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\RotateTowardsMouse.cs" />
+     <Compile Include="Assets\ProCamera2D\Examples\TopDownShooter\Scripts\SwitchCameraProjection.cs" />
+     <Compile Include="Assets\ProCamera2D\ProCamera2D.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Procedural Mesh\ExtrudeRandomEdges.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
+     <Compile Include="Assets\Recursos\AmplifyColor\Plugins\AmplifyColorEffect.cs" />
+     <Compile Include="Assets\Recursos\AmplifyColor\Plugins\AmplifyColorVolume.cs" />
+     <Compile Include="Assets\Recursos\AmplifyColor\Plugins\AmplifyColorVolume2D.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionCurves.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionLookup.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\ContrastStretch.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\EdgeDetection.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\Fisheye.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\GlobalFog.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\Grayscale.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\ImageEffects.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndScratches.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\ScreenOverlay.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\SepiaTone.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\TiltShift.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\Tonemapping.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
+     <Compile Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+     <Compile Include="Assets\Recursos\StylizedWaterShader\Code\WaterReflection.cs" />
+     <Compile Include="Assets\Recursos\StylizedWaterShader\MobileVersion\EnableCameraDepthInForward.cs" />
+     <Compile Include="Assets\Script\Bueno\AI.cs" />
+     <Compile Include="Assets\Script\Bueno\AIPanzer.cs" />
+     <Compile Include="Assets\Script\Bueno\AIVehicle.cs" />
+     <Compile Include="Assets\Script\Bueno\Buscador.cs" />
+     <Compile Include="Assets\Script\Bueno\CustomEspecial.cs" />
+     <Compile Include="Assets\Script\Bueno\CustomFusilero.cs" />
+     <Compile Include="Assets\Script\Bueno\CustomMetra.cs" />
+     <Compile Include="Assets\Script\Bueno\PanzerAnimations.cs" />
+     <Compile Include="Assets\Script\Bueno\secundario.cs" />
+     <Compile Include="Assets\Script\Bueno\tankAnimations.cs" />
+     <Compile Include="Assets\Script\Bueno\tankSounds.cs" />
+     <Compile Include="Assets\Script\Cajas.cs" />
+     <Compile Include="Assets\Script\Cam.cs" />
+     <Compile Include="Assets\Script\CamCustom.cs" />
+     <Compile Include="Assets\Script\CamMenu.cs" />
+     <Compile Include="Assets\Script\dinero.cs" />
+     <Compile Include="Assets\Script\Enemy\BaseEnemy.cs" />
+     <Compile Include="Assets\Script\Enemy\CustomEspecialMalo.cs" />
+     <Compile Include="Assets\Script\Enemy\CustomMetralletoMalo.cs" />
+     <Compile Include="Assets\Script\Enemy\EnemyAnimations.cs" />
+     <Compile Include="Assets\Script\Enemy\EnemyApuntar.cs" />
+     <Compile Include="Assets\Script\Enemy\EnemyAttack.cs" />
+     <Compile Include="Assets\Script\Enemy\EnemyCompleto.cs" />
+     <Compile Include="Assets\Script\Enemy\EnemyMetra.cs" />
+     <Compile Include="Assets\Script\Enemy\EnemyMortero.cs" />
+     <Compile Include="Assets\Script\Enemy\EnemyPanzer.cs" />
+     <Compile Include="Assets\Script\Enemy\ManagerEnemy.cs" />
+     <Compile Include="Assets\Script\Enemy\vista.cs" />
+     <Compile Include="Assets\Script\Hero\Animaciones.cs" />
+     <Compile Include="Assets\Script\Hero\apuntar.cs" />
+     <Compile Include="Assets\Script\Hero\Cara.cs" />
+     <Compile Include="Assets\Script\Hero\Casco.cs" />
+     <Compile Include="Assets\Script\Hero\Chaleco.cs" />
+     <Compile Include="Assets\Script\Hero\Cinturon.cs" />
+     <Compile Include="Assets\Script\Hero\Cuello.cs" />
+     <Compile Include="Assets\Script\Hero\Custom.cs" />
+     <Compile Include="Assets\Script\Hero\CustomFinal.cs" />
+     <Compile Include="Assets\Script\Hero\customTow.cs" />
+     <Compile Include="Assets\Script\Hero\Hero.cs" />
+     <Compile Include="Assets\Script\Hero\Hero2.cs" />
+     <Compile Include="Assets\Script\Hero\Maleta.cs" />
+     <Compile Include="Assets\Script\Hero\Mascara.cs" />
+     <Compile Include="Assets\Script\Hero\Movie.cs" />
+     <Compile Include="Assets\Script\Hero\Sonidos.cs" />
+     <Compile Include="Assets\Script\Hero\Uniform.cs" />
+     <Compile Include="Assets\Script\Level\barra.cs" />
+     <Compile Include="Assets\Script\Level\Base.cs" />
+     <Compile Include="Assets\Script\Level\CajaCarta.cs" />
+     <Compile Include="Assets\Script\Level\Cards.cs" />
+     <Compile Include="Assets\Script\Level\Cartas.cs" />
+     <Compile Include="Assets\Script\Level\loading.cs" />
+     <Compile Include="Assets\Script\Level\Logo.cs" />
+     <Compile Include="Assets\Script\Level\Mano.cs" />
+     <Compile Include="Assets\Script\Level\ManoJuego.cs" />
+     <Compile Include="Assets\Script\Level\ManoMenu.cs" />
+     <Compile Include="Assets\Script\Level\MenuCard.cs" />
+     <Compile Include="Assets\Script\Level\MenuMusic.cs" />
+     <Compile Include="Assets\Script\Level\MenuSelect.cs" />
+     <Compile Include="Assets\Script\Level\MenuSonidos.cs" />
+     <Compile Include="Assets\Script\Level\vender.cs" />
+     <Compile Include="Assets\Script\Manager.cs" />
+     <Compile Include="Assets\Script\Objects\armas.cs" />
+     <Compile Include="Assets\Script\Objects\bala.cs" />
+     <Compile Include="Assets\Script\Objects\balaMortero.cs" />
+     <Compile Include="Assets\Script\Objects\balaTank.cs" />
+     <Compile Include="Assets\Script\Objects\casquillos.cs" />
+     <Compile Include="Assets\Script\Objects\Covertura.cs" />
+     <Compile Include="Assets\Script\Objects\Destruir.cs" />
+     <Compile Include="Assets\Script\Objects\Explo.cs" />
+     <Compile Include="Assets\Script\Objects\faceCamera.cs" />
+     <Compile Include="Assets\Script\Objects\Granade.cs" />
+     <Compile Include="Assets\Script\Objects\impact.cs" />
+     <Compile Include="Assets\Script\Objects\Llamas.cs" />
+     <Compile Include="Assets\Script\Objects\Ondass.cs" />
+     <Compile Include="Assets\Script\Objects\pedazos.cs" />
+     <Compile Include="Assets\Script\Objects\pedazosPadre.cs" />
+     <Compile Include="Assets\Script\Objects\puaz.cs" />
+     <Compile Include="Assets\Script\Objects\Shake2.cs" />
+     <Compile Include="Assets\Script\Objects\skinCarta.cs" />
+     <Compile Include="Assets\Script\Objects\sonidoAleatorio.cs" />
+     <Compile Include="Assets\Script\Objects\textos.cs" />
+     <Compile Include="Assets\Script\Options.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Animation.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\AnimationState.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\AnimationStateData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Atlas.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\AtlasAttachmentLoader.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\Attachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\AttachmentLoader.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\AttachmentType.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\BoundingBoxAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\ClippingAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\MeshAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\PathAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\PointAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\RegionAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Attachments\VertexAttachment.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\BlendMode.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Bone.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\BoneData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Event.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\EventData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\ExposedList.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\IConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\IkConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\IkConstraintData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\IUpdatable.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Json.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\MathUtils.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\PathConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\PathConstraintData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Skeleton.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\SkeletonBinary.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\SkeletonBounds.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\SkeletonClipping.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\SkeletonData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\SkeletonJson.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Skin.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Slot.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\SlotData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\TransformConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\TransformConstraintData.cs" />
+     <Compile Include="Assets\Spine\spine-csharp\Triangulator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Asset Types\AtlasAsset.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Asset Types\SkeletonDataAsset.cs" />
+     <Compile Include="Assets\Spine\spine-unity\BoneFollower.cs" />
+     <Compile Include="Assets\Spine\spine-unity\ISkeletonAnimation.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\DoubleBuffered.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\SpineMesh.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\ArraysMeshGenerator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\ArraysSimpleMeshGenerator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\ArraysSubmeshedMeshGenerator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\ArraysSubmeshSetMeshGenerator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\DoubleBufferedMesh.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\ISimpleMeshGenerator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Mesh Generation\Unused\ISubmeshedMeshGenerator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\AttachmentTools\AttachmentTools.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\BoundingBoxFollower\BoundingBoxFollower.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Ghost\SkeletonGhost.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Ghost\SkeletonGhostRenderer.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Ragdoll\SkeletonRagdoll.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Ragdoll\SkeletonRagdoll2D.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\BoneFollowerGraphic.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\SkeletonGraphic.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonRenderSeparator\SkeletonPartsRenderer.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityEyeConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityGroundConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityKinematicShadow.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SlotBlendModes\SlotBlendModes.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\TK2D\SpriteCollectionAttachmentLoader.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\YieldInstructions\WaitForSpineAnimationComplete.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\YieldInstructions\WaitForSpineEvent.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\YieldInstructions\WaitForSpineTrackEntryEnd.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonAnimation.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonAnimator.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonExtensions.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonRenderer.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonUtility\SkeletonUtility.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SpineAttributes.cs" />
+     <Compile Include="Assets\SpriteGlow\SpriteGlow.cs" />
+     <Compile Include="Assets\StylizedExplosionPack\scripts\destroyMe.cs" />
+     <Compile Include="Assets\StylizedExplosionPack\scripts\instantiateEffectCaller.cs" />
+     <Compile Include="Assets\StylizedExplosionPack\scripts\particleColorChanger.cs" />
+     <None Include="Assets\Spine\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+     <None Include="Assets\PrefabBrush\Editor\Data\SaveData.txt" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Utility\HiddenPass.shader" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Spine-Skeleton-Fill.shader" />
+     <None Include="Assets\PigeonCoopToolkit\__SharedDemoAssets\_Shaders\Unlit Transparent Color.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpritePixelLighting.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteVertexLighting.cginc" />
+     <None Include="Assets\Recursos\polyquest_v1_cliffs\scenes\Cliffs_Scenes\Cliffs_Textured_lightmapped_scenes\Troubleshooting_lightmap_issues_LM.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteShadows.cginc" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\pb_SelectionPicker.shader" />
+     <None Include="Assets\ProCore\ProBuilder\About\changelog.txt" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseVertexColor.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+     <None Include="Assets\Recursos\StylizedWaterShader\VFX\VFXResources\VFXWater.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
+     <None Include="Assets\Standard Assets\Effects\AntiAliasing\FXAA\Resources\FXAA3.cginc" />
+     <None Include="Assets\JMO Assets\Cartoon FX\Shaders (Mobile)\CFXM_MobileParticleAdd_Alpha8.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteShadows.cginc" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritePixelLighting.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\Characters\CARDS\cartas.atlas.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteLighting.cginc" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\Recursos\AmplifyColor\Resources\MaskBlend.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\Standard Assets\Effects\TemporalAntiAliasing\Resources\TemporalAntiAliasing.cginc" />
+     <None Include="Assets\Standard Assets\Effects\MotionBlur\Resources\Reconstruction.cginc" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic-TintBlack.shader" />
+     <None Include="Assets\Bleed\HowToUse.txt" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\pb_FaceHighlight.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX2 Releases Notes.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\ShaderShared.cginc" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+     <None Include="Assets\Standard Assets\Effects\ScreenSpaceReflection\Resources\ScreenSpaceReflection.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
+     <None Include="Assets\Recursos\polyquest_v1_cliffs\scenes\Cliffs_Scenes\Cliffs_Textured_lightmapped_scenes\Troubleshooting_textured_scenes_TX.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Standard Assets\Effects\AmbientOcclusion\Resources\Common.cginc" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
+     <None Include="Assets\Recursos\polyquest_v1_cliffs\shaders\PolyboxStandard.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+     <None Include="Assets\Characters\effects\effects.atlas.txt" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\UnlitSolidColor.shader" />
+     <None Include="Assets\Characters\capasIntro\capa2.atlas.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\pb_ReferenceUnlit.shader" />
+     <None Include="Assets\Standard Assets\Effects\AmbientOcclusion\Resources\AmbientOcclusion.cginc" />
+     <None Include="Assets\Standard Assets\Effects\DepthOfField\Resources\DepthOfField.shader" />
+     <None Include="Assets\Recursos\AmplifyColor\Resources\Blend.shader" />
+     <None Include="Assets\Characters\polvos\polvos.atlas.txt" />
+     <None Include="Assets\Standard Assets\Effects\ScreenSpaceReflection\Resources\ScreenSpaceRaytrace.cginc" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\Recursos\AmplifyColor\Resources\BlendCache.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
+     <None Include="Assets\Recursos\AmplifyColor\Resources\Mask.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+     <None Include="Assets\Recursos\AmplifyColor\Samples\Check out the full LUT Package.txt" />
+     <None Include="Assets\Standard Assets\Effects\MotionBlur\Resources\Common.cginc" />
+     <None Include="Assets\Standard Assets\Effects\AmbientOcclusion\Resources\AmbientOcclusion.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+     <None Include="Assets\Recursos\StylizedWaterShader\MobileVersion\Shader\StylizedWaterMobile.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteLighting.cginc" />
+     <None Include="Assets\Standard Assets\Effects\AntiAliasing\FXAA\Resources\FXAA.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Screen.shader" />
+     <None Include="Assets\StylizedExplosionPack\shader\alphaBlend_depthBlend_glow.shader" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseTextureBlend.shader" />
+     <None Include="Assets\MaxP\Shaders\_Source\Shaders\Resources\Blur.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+     <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\HistogramRender.shader" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\pb_StandardVertexColor.shader" />
+     <None Include="Assets\Recursos\PrefabBrush\Editor\Data\SaveData.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
+     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX2 Particle Alpha Blend Add.shader" />
+     <None Include="Assets\Recursos\StylizedWaterShader\Example\Materials\foliage.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteUnlit.cginc" />
+     <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\TonemappingColorGrading.cginc" />
+     <None Include="Assets\Recursos\StylizedWaterShader\Shaders\VFXWater.shader" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\pb_VertexPicker.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Assets\Recursos\StylizedWaterShader\Shaders\StylizedWater.shader" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\pb_HideVertices.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Spine\spine-unity\version.txt" />
+     <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritesPixelLit.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+     <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Circle.shader" />
+     <None Include="Assets\Standard Assets\Effects\AntiAliasing\SMAA\Resources\SMAA.shader" />
+     <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
+     <None Include="Assets\Recursos\AmplifyColor\Readme.txt" />
+     <None Include="Assets\StylizedExplosionPack\shader\alphaBlend_glow.shader" />
+     <None Include="Assets\Standard Assets\Effects\AmbientOcclusion\Resources\Composition.cginc" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Spine-Skeleton-Tint.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\ProCore\ProBuilder\About\ThirdPartyLicenses.txt" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
+     <None Include="Assets\Characters\Soldier\soldiers.atlas.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritesUnlit.shader" />
+     <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Wipe.shader" />
+     <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\pb_UnlitVertexColor.shader" />
+     <None Include="Assets\Recursos\PrefabBrush\README.txt" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\pb_FacePicker.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Utility\Hidden-Spine-Bones.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
+     <None Include="Assets\JMO Assets\!JMO Assets Readme.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritesVertexLit.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Bleed\ImageBlendEffect.shader" />
+     <None Include="Assets\Characters\FX\skeleton.atlas.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Ghost\Shaders\Spine-Special-Skeleton-Ghost.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
+     <None Include="Assets\Standard Assets\Effects\AntiAliasing\SMAA\Resources\SMAA.cginc" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\StylizedExplosionPack\Tips &amp; Documentations.txt" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Blinds.shader" />
+     <None Include="Assets\Recursos\AmplifyColor\Resources\ProcessOnly.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
+     <None Include="Assets\ProCore\ProBuilder\About\Font\SIL Open Font License.txt" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteVertexLighting.cginc" />
+     <None Include="Assets\Characters\capasIntro\capa1.atlas.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+     <None Include="Assets\ProCamera2D\Code\Helpers\Letterbox\Resources\Letterbox.shader" />
+     <None Include="Assets\Recursos\AmplifyColor\License.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_WaterWiggle.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+     <None Include="Assets\PigeonCoopToolkit\__SharedDemoAssets\Sword\sword License.txt" />
+     <None Include="Assets\Recursos\AmplifyColor\Resources\DepthMask.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
+     <None Include="Assets\ProCore\ProBuilder\About\pc_AboutEntry_ProBuilder.txt" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Recursos\AmplifyColor\Resources\Common.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
+     <None Include="Assets\ProCamera2D\README.txt" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CameraDepthNormalsTexture.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Spine-Skeleton-TintBlack.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderShared.cginc" />
+     <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Shutters.shader" />
+     <None Include="Assets\Standard Assets\Effects\MotionBlur\Resources\Prefilter.cginc" />
+     <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\TonemappingColorGrading.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\Characters\paracaidas\elementos.atlas.txt" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\pb_VertexShader.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
+     <None Include="Assets\MaxP\Shaders\_Source\Shaders\Resources\DirtyLensFlare.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\Recursos\AmplifyColor\Resources\DepthMaskBlend.shader" />
+     <None Include="Assets\PigeonCoopToolkit\__SharedDemoAssets\a-104 Rifle\a-104 Rifle License.txt" />
+     <None Include="Assets\Recursos\AmplifyColor\Resources\Base.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\PigeonCoopToolkit\__SharedDemoAssets\_Shaders\DiffuseColorMask.shader" />
+     <None Include="Assets\Standard Assets\Effects\AmbientOcclusion\Resources\SeparableBlur.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
+     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX2 Particle Alpha Blend Tint.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CameraNormalsTexture.shader" />
+     <None Include="Assets\Recursos\polyquest_v1_cliffs\shaders\PolyboxCoreForwardSimple.cginc" />
+     <None Include="Assets\Standard Assets\Effects\MotionBlur\Resources\FrameBlending.shader" />
+     <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.cginc" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
+     <None Include="Assets\SpriteGlow\SpriteOutline.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\Standard Assets\Effects\DepthOfField\Resources\MedianFilter.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\Recursos\StylizedWaterShader\MobileVersion\README.txt" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX2 Readme.txt" />
+     <None Include="Assets\Standard Assets\Effects\DepthOfField\Resources\BokehSplatting.shader" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\pb_ScrollHighlight.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\ProCore\ProBuilder\readme.txt" />
+     <None Include="Assets\Standard Assets\Effects\TemporalAntiAliasing\Resources\TemporalAntiAliasing.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+     <None Include="Assets\Characters\TANK\tank.atlas.txt" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CameraDepthTexture.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Multiply.shader" />
+     <None Include="Assets\Recursos\polyquest_v1_cliffs\shaders\PolyboxCore.cginc" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\Recursos\polyquest_v1_cliffs\shaders\PolyboxCoreForward.cginc" />
+     <None Include="Assets\animadosSpine\destroyer\destroyer_.atlas.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderMaths.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.txt" />
+     <None Include="Assets\ProCamera2D\Code\Helpers\TransitionFX\Resources\PC2D_Fade.shader" />
+     <None Include="Assets\Standard Assets\Effects\MotionBlur\Resources\Reconstruction.shader" />
+     <None Include="Assets\Standard Assets\Effects\LensAberrations\Resources\LensAberrations.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteDepthNormalsTexture.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\HistogramCompute.compute" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Spine-SkeletonLit.shader" />
+     <None Include="Assets\Textures\font\OFL.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteSpecular.cginc" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\Recursos\Stylized Nature Pack\Demo Scene\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderCore-Unity5">
+ <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderMeshOps-Unity5">
+ <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
+ </Reference>
+ <Reference Include="KdTreeLib">
+ <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
+ </Reference>
+ <Reference Include="pb_Stl">
+ <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+ </Reference>
+ <Reference Include="Poly2Tri">
+ <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+ </Reference>
+ <Reference Include="AmplifyColor">
+ <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/Recursos/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{CF989648-A3F3-B19D-0B17-4FC076E6B393}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.csproj">
+      <Project>{A9E7FF6D-3ED1-F7C3-7CF6-533E589FFDD5}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
