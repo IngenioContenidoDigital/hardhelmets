@@ -26,4 +26,22 @@ public class MenuSonidos : MonoBehaviour {
 		GetComponent<AudioSource>().clip = cartassalen;
 		GetComponent<AudioSource>().Play();
 	}
+
+
+	public AudioClip Supplies1;
+	public AudioClip Supplies2;
+
+	public void SuppliesEntra()
+	{
+		GetComponent<AudioSource>().volume = 1;
+		GetComponent<AudioSource>().clip = Supplies1;
+		GetComponent<AudioSource>().Play();
+	}
+
+	public void SuppliesSale()
+	{
+		GetComponent<AudioSource>().volume = 1;
+		GetComponent<AudioSource>().clip = Supplies2;
+		GetComponent<AudioSource>().Play();
+	}
 }

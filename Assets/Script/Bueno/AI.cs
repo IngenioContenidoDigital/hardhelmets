@@ -273,7 +273,6 @@ public class AI : MonoBehaviour {
 
 						if(disparos >= 1)//2
 						{
-							disparos = 0;
 							animator.SetInteger("recarga", Tipo);
 						}else
 						{

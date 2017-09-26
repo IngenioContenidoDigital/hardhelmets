@@ -138,31 +138,44 @@ public class Cards : MonoBehaviour {
 	{
 		cantidadUsadas = cantidadTotal-cantidad;
 
+		//ACTUALIZA EL VALOR DE CARTAS TOTALES
 		if(cantidadTotal != PlayerPrefs.GetInt("card"+carta+"cantidad"))
 		{
 			print("VALOR A CAMBIAR");
 			cantidadTotal = PlayerPrefs.GetInt("card"+carta+"cantidad");
 			cantidad = cantidadTotal-cantidadUsadas;
 		}
-
+		//SI LA CARTA EXISTE Y TIENE MAS DE 1
 		if(PlayerPrefs.GetInt("card"+carta) == 1 && cantidad >= 1)
 		{
 			usada = false;
 			//print("SI EXISTE");
 			boton.SetActive(true);
 			nivel.text = "X "+cantidad.ToString();
-		}else
+		}else if(PlayerPrefs.GetInt("card"+carta) == 1 && cantidad == 0)//SI LA CARTA EXISTE PERO LAS TIENE TODAS USADAS
+		{
+			usada = true;
+			print("VOLTEAR CARTA");
+			/*nivel.text = "";
+			boton.SetActive(false);
+		
+			GetComponent<Button>().enabled = false;
+			imagen.sprite = atras;
+			//GetComponent<Image>().color = new Color32(100,100,100,100);*/
+		}
+
+		//SI LA CARTA NO EXISTE
+		if(PlayerPrefs.GetInt("card"+carta) == 0)
 		{
 			nivel.text = "";
 			boton.SetActive(false);
-		
 			GetComponent<Button>().enabled = false;
 			GetComponent<Image>().color = new Color32(100,100,100,100);
 		}
 
-
 		if(usada)
 		{
+			nivel.text = "";
 			boton.SetActive(false);
 			GetComponent<Button>().enabled = false;
 			//GetComponent<Image>().color = new Color32(150,150,150,150);
@@ -185,6 +198,7 @@ public class Cards : MonoBehaviour {
 	{
 		sell.GetComponent<vender>().nombre = carta;
 		sell.GetComponent<vender>().cantidad = cantidad;
+		sell.GetComponent<vender>().cantidadUsadas = cantidadUsadas;
 		ventana.SetActive(true);
 	}
 }
