@@ -150,6 +150,10 @@ public class vender : MonoBehaviour {
 			PlayerPrefs.SetInt("card"+nombre+"cantidad", PlayerPrefs.GetInt("card"+nombre+"cantidad")-eliminar);
 
 			//PlayerPrefs.SetInt("card"+nombre+"cantidadUsadas", cantidadUsadas);
+		}else
+		{
+			cantidad -= eliminar;
+			PlayerPrefs.SetInt("card"+nombre+"cantidad", PlayerPrefs.GetInt("card"+nombre+"cantidad")-eliminar);
 		}
 
 		monedas += valorTotal;

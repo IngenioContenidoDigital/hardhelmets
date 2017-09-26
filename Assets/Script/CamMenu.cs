@@ -181,8 +181,8 @@ public class CamMenu : MonoBehaviour {
 		secundaria = new Vector3(25.6f,transform.position.y, transform.position.z);
 
 		caja1 = 5;//PlayerPrefs.GetInt("caja1");
-		caja2 = 3;//PlayerPrefs.GetInt("caja2");
-		caja3 = 1;//PlayerPrefs.GetInt("caja3");
+		//caja2 = 3;//PlayerPrefs.GetInt("caja2");
+		//caja3 = 1;//PlayerPrefs.GetInt("caja3");
 	}
 	
 	// Update is called once per frame

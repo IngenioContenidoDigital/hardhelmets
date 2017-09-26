@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E6B6CE9C-0D25-CF9C-D160-A72B8CD7B9C4}</ProjectGuid>
+    <ProjectGuid>{86C15BA1-71C8-731F-13B2-FB4936251E29}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
@@ -407,38 +407,38 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="JMOAssets">
- <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/JMO Assets/Editor/JMOAssets.dll</HintPath>
+ <HintPath>D:/UNITY3D/hardhelmets/Assets/JMO Assets/Editor/JMOAssets.dll</HintPath>
  </Reference>
  <Reference Include="ProBuilderCore-Unity5">
- <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
+ <HintPath>D:/UNITY3D/hardhelmets/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
  </Reference>
  <Reference Include="ProBuilderMeshOps-Unity5">
- <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
+ <HintPath>D:/UNITY3D/hardhelmets/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
  </Reference>
  <Reference Include="KdTreeLib">
- <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
+ <HintPath>D:/UNITY3D/hardhelmets/Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
  </Reference>
  <Reference Include="pb_Stl">
- <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+ <HintPath>D:/UNITY3D/hardhelmets/Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
  </Reference>
  <Reference Include="Poly2Tri">
- <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+ <HintPath>D:/UNITY3D/hardhelmets/Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
  </Reference>
  <Reference Include="ProBuilderEditor-Unity5">
- <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/ProCore/ProBuilder/Editor/ProBuilderEditor-Unity5.dll</HintPath>
+ <HintPath>D:/UNITY3D/hardhelmets/Assets/ProCore/ProBuilder/Editor/ProBuilderEditor-Unity5.dll</HintPath>
  </Reference>
  <Reference Include="AmplifyColor">
- <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/Recursos/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
+ <HintPath>D:/UNITY3D/hardhelmets/Assets/Recursos/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
  </Reference>
  <Reference Include="AmplifyColorEditor">
- <HintPath>D:/UNITY3D/proyects/Unity Projects/War2/Assets/Recursos/AmplifyColor/Plugins/Editor/AmplifyColorEditor.dll</HintPath>
+ <HintPath>D:/UNITY3D/hardhelmets/Assets/Recursos/AmplifyColor/Plugins/Editor/AmplifyColorEditor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{CF989648-A3F3-B19D-0B17-4FC076E6B393}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{5B97CB2C-7172-EAE1-C9E8-90103F09343F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.csproj">
-      <Project>{A9E7FF6D-3ED1-F7C3-7CF6-533E589FFDD5}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{273AA45D-0FA8-2075-06BC-92D71727E9E7}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

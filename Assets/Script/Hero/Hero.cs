@@ -1305,12 +1305,12 @@ public class Hero : MonoBehaviour {
 	}
 	void OnTriggerEnter (Collider col)
 	{
-		if(col.gameObject.tag == "cobertura" && vivo)
+		/*if(col.gameObject.tag == "cobertura" && vivo)
 		{
 			coverPosition = new Vector3(col.gameObject.transform.position.x, transform.position.y, col.gameObject.transform.position.z);
 			cubrirse = true;
 			cuchillo = true;
-		}
+		}*/
 		if(col.gameObject.name == "uno")
 		{
 			Cam.Area2 = !Cam.Area2;

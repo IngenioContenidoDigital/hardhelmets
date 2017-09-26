@@ -9,6 +9,7 @@ public class Cajas : MonoBehaviour {
 
 	public static int abiertas;
 	public GameObject regresar;
+	public GameObject otra;
 
 	public int deb1;
 	public int deb2;
@@ -39,21 +40,33 @@ public class Cajas : MonoBehaviour {
 	int carta5;
 	int carta6;
 
+	//DE QUE A QUE CARTA PUEDE DESTAPAR
+	public int minima;
+	public int maxima;//1,2,7,8,9,11,15
+
+	int cajas;
+	public UnityEngine.UI.Text cajasT;
+
 	// Use this for initialization
 	void Start ()
 	{
-		deb1 = Random.Range(1,19);
-		deb2 = Random.Range(1,19);
-		deb3 = Random.Range(1,19);
-		deb4 = Random.Range(1,19);
-		deb5 = Random.Range(1,19);
-		deb6 = Random.Range(1,19);
+		abiertas = 0;
+		deb1 = Random.Range(minima,maxima);
+		deb2 = Random.Range(minima,maxima);
+		deb3 = Random.Range(minima,maxima);
+		deb4 = Random.Range(minima,maxima);
+		deb5 = Random.Range(minima,maxima);
+		deb6 = Random.Range(minima,maxima);
 		listo1 = true;
+
+		cajas = PlayerPrefs.GetInt("caja1");
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
+		cajasT.text = cajas.ToString();
+		PlayerPrefs.SetInt("caja1", cajas);
 		if(listo1)
 		{
 			print("TODOS DEBERIAN SER DIFERENTES");
@@ -183,11 +196,27 @@ public class Cajas : MonoBehaviour {
 		{
 			regresar.SetActive(true);
 		}
+		if(abiertas >= 6 && cajas >= 1)
+		{
+			regresar.SetActive(true);
+			otra.SetActive(true);
+		}
 	}
 
 	public void animar ()
 	{
 		GetComponent<PlayableDirector>().Play();
+	}
+
+	public void Reopen()
+	{
+		if(cajas >= 1)
+		{
+			//otra.SetActive(false);
+			cajas -= 1;
+			loading.nombre = "cajas";
+			Application.LoadLevel("Load");
+		}
 	}
 
 	public void salir ()

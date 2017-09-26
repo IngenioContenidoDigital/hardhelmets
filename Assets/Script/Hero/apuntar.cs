@@ -41,6 +41,8 @@ public class apuntar : MonoBehaviour {
 	RaycastHit hit;
 
 
+
+
 	void Update ()
 	{
 		ray = Camera.main.ScreenPointToRay(Input.mousePosition);
