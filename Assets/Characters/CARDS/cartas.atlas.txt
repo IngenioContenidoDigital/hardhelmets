@@ -1,0 +1,377 @@
+
+cartas.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+10Submachine
+  rotate: false
+  xy: 2, 712
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+11Shotgun_
+  rotate: false
+  xy: 2, 407
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+12LightTank
+  rotate: false
+  xy: 204, 712
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+13MGDefence
+  rotate: false
+  xy: 2, 102
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+14Mortar
+  rotate: false
+  xy: 204, 407
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+15Rocket
+  rotate: false
+  xy: 406, 712
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+16USMachineGun
+  rotate: false
+  xy: 204, 102
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+17Flamethrower
+  rotate: false
+  xy: 406, 407
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+18HeavyTank
+  rotate: false
+  xy: 608, 712
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+1AssaultRifle
+  rotate: false
+  xy: 406, 102
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+2Submachine_
+  rotate: false
+  xy: 608, 407
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+3Shotgun
+  rotate: false
+  xy: 810, 712
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+4Machinegun_
+  rotate: false
+  xy: 608, 102
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+5sniper
+  rotate: false
+  xy: 810, 407
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+6Flamethrower_
+  rotate: false
+  xy: 1012, 712
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+7HandGrenade
+  rotate: false
+  xy: 810, 102
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+8supplies
+  rotate: false
+  xy: 1012, 407
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+9USInfantry
+  rotate: false
+  xy: 1214, 712
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00003
+  rotate: true
+  xy: 2, 2
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00004
+  rotate: false
+  xy: 1214, 285
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00005
+  rotate: false
+  xy: 1416, 590
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00006
+  rotate: false
+  xy: 1618, 895
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00007
+  rotate: true
+  xy: 124, 2
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00008
+  rotate: false
+  xy: 1214, 163
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00009
+  rotate: false
+  xy: 1314, 285
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00010
+  rotate: false
+  xy: 1416, 468
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00011
+  rotate: false
+  xy: 1516, 590
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00012
+  rotate: false
+  xy: 1618, 773
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00013
+  rotate: false
+  xy: 1718, 895
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00014
+  rotate: true
+  xy: 246, 2
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00015
+  rotate: false
+  xy: 1314, 163
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00016
+  rotate: false
+  xy: 1516, 468
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/energy_00017
+  rotate: false
+  xy: 1718, 773
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00001
+  rotate: false
+  xy: 1818, 895
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00002
+  rotate: true
+  xy: 368, 2
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00003
+  rotate: false
+  xy: 1818, 773
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00004
+  rotate: false
+  xy: 1918, 895
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00005
+  rotate: true
+  xy: 490, 2
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00006
+  rotate: false
+  xy: 1918, 773
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00007
+  rotate: true
+  xy: 612, 2
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00008
+  rotate: true
+  xy: 734, 2
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00009
+  rotate: true
+  xy: 856, 2
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00010
+  rotate: true
+  xy: 978, 2
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00011
+  rotate: true
+  xy: 1100, 2
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00012
+  rotate: true
+  xy: 1416, 368
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00013
+  rotate: false
+  xy: 1414, 246
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00014
+  rotate: true
+  xy: 1618, 673
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00015
+  rotate: true
+  xy: 1740, 673
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00016
+  rotate: true
+  xy: 1862, 673
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+Energy 04/flame_00017
+  rotate: false
+  xy: 1616, 551
+  size: 98, 120
+  orig: 98, 120
+  offset: 0, 0
+  index: -1
+brillo
+  rotate: false
+  xy: 1012, 102
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+reversa
+  rotate: false
+  xy: 1214, 407
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1
+sombra
+  rotate: false
+  xy: 1416, 712
+  size: 200, 303
+  orig: 200, 303
+  offset: 0, 0
+  index: -1

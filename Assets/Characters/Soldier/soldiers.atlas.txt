@@ -1,0 +1,881 @@
+
+soldiers.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ACuerpo
+  rotate: false
+  xy: 336, 1528
+  size: 197, 330
+  orig: 197, 330
+  offset: 0, 0
+  index: -1
+ACuerpoM
+  rotate: false
+  xy: 535, 1576
+  size: 197, 330
+  orig: 197, 330
+  offset: 0, 0
+  index: -1
+ACuerpoMnegro
+  rotate: false
+  xy: 734, 1576
+  size: 197, 330
+  orig: 197, 330
+  offset: 0, 0
+  index: -1
+ACuerponegro
+  rotate: false
+  xy: 933, 1576
+  size: 197, 330
+  orig: 197, 330
+  offset: 0, 0
+  index: -1
+AbrazoD
+  rotate: true
+  xy: 868, 1113
+  size: 98, 214
+  orig: 98, 214
+  offset: 0, 0
+  index: -1
+AbrazoDnegro
+  rotate: true
+  xy: 868, 1013
+  size: 98, 214
+  orig: 98, 214
+  offset: 0, 0
+  index: -1
+AbrazoI
+  rotate: false
+  xy: 381, 1203
+  size: 235, 135
+  orig: 235, 135
+  offset: 0, 0
+  index: -1
+AbrazoInegro
+  rotate: false
+  xy: 189, 1010
+  size: 235, 135
+  orig: 235, 135
+  offset: 0, 0
+  index: -1
+AbrazoM
+  rotate: true
+  xy: 260, 518
+  size: 98, 214
+  orig: 98, 214
+  offset: 0, 0
+  index: -1
+AbrazoMnegro
+  rotate: false
+  xy: 559, 794
+  size: 98, 214
+  orig: 98, 214
+  offset: 0, 0
+  index: -1
+CabezaB
+  rotate: false
+  xy: 1466, 1539
+  size: 91, 116
+  orig: 91, 116
+  offset: 0, 0
+  index: -1
+CabezaC
+  rotate: true
+  xy: 1684, 1380
+  size: 91, 116
+  orig: 91, 116
+  offset: 0, 0
+  index: -1
+CabezaC2
+  rotate: true
+  xy: 1802, 1379
+  size: 91, 116
+  orig: 91, 116
+  offset: 0, 0
+  index: -1
+CabezaZ
+  rotate: true
+  xy: 549, 485
+  size: 91, 116
+  orig: 91, 116
+  offset: 0, 0
+  index: -1
+Correa
+  rotate: true
+  xy: 759, 825
+  size: 30, 98
+  orig: 30, 98
+  offset: 0, 0
+  index: -1
+Cuello
+  rotate: true
+  xy: 1456, 1014
+  size: 85, 108
+  orig: 85, 108
+  offset: 0, 0
+  index: -1
+Cuellonegro
+  rotate: false
+  xy: 1566, 998
+  size: 85, 108
+  orig: 85, 108
+  offset: 0, 0
+  index: -1
+GEbrazoD
+  rotate: false
+  xy: 766, 1073
+  size: 100, 216
+  orig: 100, 216
+  offset: 0, 0
+  index: -1
+GEbrazoDDis
+  rotate: false
+  xy: 449, 626
+  size: 100, 216
+  orig: 100, 216
+  offset: 0, 0
+  index: -1
+GEbrazoI
+  rotate: false
+  xy: 1627, 1809
+  size: 255, 135
+  orig: 255, 135
+  offset: 0, 0
+  index: -1
+GEcasco1
+  rotate: true
+  xy: 476, 509
+  size: 115, 71
+  orig: 115, 71
+  offset: 0, 0
+  index: -1
+GEcasco2
+  rotate: false
+  xy: 1315, 994
+  size: 122, 67
+  orig: 122, 67
+  offset: 0, 0
+  index: -1
+GEcasco3
+  rotate: false
+  xy: 1914, 1199
+  size: 115, 71
+  orig: 115, 71
+  offset: 0, 0
+  index: -1
+GEchaquet
+  rotate: false
+  xy: 189, 1147
+  size: 190, 191
+  orig: 190, 191
+  offset: 0, 0
+  index: -1
+GEchaquetDis
+  rotate: false
+  xy: 426, 1010
+  size: 190, 191
+  orig: 190, 191
+  offset: 0, 0
+  index: -1
+GEcuerpo
+  rotate: true
+  xy: 336, 1340
+  size: 186, 280
+  orig: 186, 280
+  offset: 0, 0
+  index: -1
+GEcuerpoDis
+  rotate: true
+  xy: 618, 1388
+  size: 186, 280
+  orig: 186, 280
+  offset: 0, 0
+  index: -1
+GEfalda
+  rotate: true
+  xy: 900, 1390
+  size: 184, 208
+  orig: 184, 208
+  offset: 0, 0
+  index: -1
+GEmaleta
+  rotate: false
+  xy: 92, 809
+  size: 146, 195
+  orig: 146, 195
+  offset: 0, 0
+  index: -1
+GEpieD
+  rotate: true
+  xy: 1132, 1541
+  size: 114, 332
+  orig: 114, 332
+  offset: 0, 0
+  index: -1
+GEpieD2
+  rotate: false
+  xy: 2, 78
+  size: 114, 332
+  orig: 114, 332
+  offset: 0, 0
+  index: -1
+GEpieI
+  rotate: true
+  xy: 618, 1291
+  size: 95, 282
+  orig: 95, 282
+  offset: 0, 0
+  index: -1
+GEpieI2
+  rotate: false
+  xy: 60, 523
+  size: 95, 282
+  orig: 95, 282
+  offset: 0, 0
+  index: -1
+GEpieIDis
+  rotate: false
+  xy: 1530, 1661
+  size: 95, 282
+  orig: 95, 282
+  offset: 0, 0
+  index: -1
+GEpouchA
+  rotate: false
+  xy: 60, 415
+  size: 88, 106
+  orig: 88, 106
+  offset: 0, 0
+  index: -1
+GEpouchB
+  rotate: false
+  xy: 1965, 1003
+  size: 61, 61
+  orig: 61, 61
+  offset: 0, 0
+  index: -1
+GEpouchC
+  rotate: false
+  xy: 1359, 1192
+  size: 67, 148
+  orig: 67, 148
+  offset: 0, 0
+  index: -1
+MG
+  rotate: false
+  xy: 1027, 1945
+  size: 520, 101
+  orig: 520, 101
+  offset: 0, 0
+  index: -1
+MG2
+  rotate: false
+  xy: 859, 836
+  size: 139, 23
+  orig: 139, 23
+  offset: 0, 0
+  index: -1
+MGred
+  rotate: true
+  xy: 157, 545
+  size: 262, 101
+  orig: 262, 101
+  offset: 0, 0
+  index: -1
+MGtripode
+  rotate: false
+  xy: 118, 74
+  size: 61, 154
+  orig: 61, 154
+  offset: 0, 0
+  index: -1
+Mano
+  rotate: false
+  xy: 1981, 1439
+  size: 65, 103
+  orig: 65, 103
+  offset: 0, 0
+  index: -1
+ManoBnegro
+  rotate: true
+  xy: 1410, 1343
+  size: 65, 103
+  orig: 65, 103
+  offset: 0, 0
+  index: -1
+Manonegro
+  rotate: false
+  xy: 1756, 1009
+  size: 65, 103
+  orig: 65, 103
+  offset: 0, 0
+  index: -1
+Mortero
+  rotate: true
+  xy: 1627, 1602
+  size: 68, 220
+  orig: 68, 220
+  offset: 0, 0
+  index: -1
+Morterobase
+  rotate: true
+  xy: 1823, 1033
+  size: 99, 67
+  orig: 99, 67
+  offset: 0, 0
+  index: -1
+Morterotripode
+  rotate: true
+  xy: 1084, 1018
+  size: 52, 229
+  orig: 52, 229
+  offset: 0, 0
+  index: -1
+Provgun
+  rotate: true
+  xy: 535, 1533
+  size: 41, 68
+  orig: 41, 68
+  offset: 0, 0
+  index: -1
+Provmetra
+  rotate: true
+  xy: 1823, 976
+  size: 55, 60
+  orig: 55, 60
+  offset: 0, 0
+  index: -1
+Provsubmetra
+  rotate: false
+  xy: 1933, 1494
+  size: 46, 96
+  orig: 46, 96
+  offset: 0, 0
+  index: -1
+Radio
+  rotate: false
+  xy: 94, 1348
+  size: 138, 510
+  orig: 138, 510
+  offset: 0, 0
+  index: -1
+USbrazoD
+  rotate: false
+  xy: 551, 578
+  size: 98, 214
+  orig: 98, 214
+  offset: 0, 0
+  index: -1
+USbrazoD2
+  rotate: false
+  xy: 659, 878
+  size: 98, 214
+  orig: 98, 214
+  offset: 0, 0
+  index: -1
+USbrazoDDis
+  rotate: false
+  xy: 759, 857
+  size: 98, 214
+  orig: 98, 214
+  offset: 0, 0
+  index: -1
+USbrazoI
+  rotate: false
+  xy: 1627, 1672
+  size: 255, 135
+  orig: 255, 135
+  offset: 0, 0
+  index: -1
+USbrazoI2
+  rotate: false
+  xy: 1102, 1206
+  size: 255, 134
+  orig: 255, 134
+  offset: 0, 0
+  index: -1
+USbrazoIdedos
+  rotate: true
+  xy: 1965, 1066
+  size: 64, 53
+  orig: 64, 53
+  offset: 0, 0
+  index: -1
+USbrazoIdedosnegro
+  rotate: false
+  xy: 1000, 806
+  size: 64, 53
+  orig: 64, 53
+  offset: 0, 0
+  index: -1
+UScasco1
+  rotate: false
+  xy: 1801, 1206
+  size: 111, 78
+  orig: 111, 78
+  offset: 0, 0
+  index: -1
+UScasco2
+  rotate: false
+  xy: 2, 8
+  size: 107, 68
+  orig: 107, 68
+  offset: 0, 0
+  index: -1
+UScasco3
+  rotate: false
+  xy: 1642, 1114
+  size: 111, 78
+  orig: 111, 78
+  offset: 0, 0
+  index: -1
+USchaquet
+  rotate: false
+  xy: 240, 814
+  size: 187, 194
+  orig: 187, 194
+  offset: 0, 0
+  index: -1
+USchaquetDis
+  rotate: false
+  xy: 260, 618
+  size: 187, 194
+  orig: 187, 194
+  offset: 0, 0
+  index: -1
+UScuerpo
+  rotate: false
+  xy: 1132, 1657
+  size: 197, 286
+  orig: 197, 286
+  offset: 0, 0
+  index: -1
+UScuerpoDis
+  rotate: false
+  xy: 1331, 1657
+  size: 197, 286
+  orig: 197, 286
+  offset: 0, 0
+  index: -1
+USfalda
+  rotate: true
+  xy: 902, 1213
+  size: 175, 198
+  orig: 175, 198
+  offset: 0, 0
+  index: -1
+USmaleta
+  rotate: false
+  xy: 618, 1094
+  size: 146, 195
+  orig: 146, 195
+  offset: 0, 0
+  index: -1
+USpieD
+  rotate: true
+  xy: 1110, 1425
+  size: 114, 332
+  orig: 114, 332
+  offset: 0, 0
+  index: -1
+USpieI
+  rotate: false
+  xy: 1884, 1662
+  size: 95, 282
+  orig: 95, 282
+  offset: 0, 0
+  index: -1
+USpieIDis
+  rotate: false
+  xy: 92, 1006
+  size: 95, 282
+  orig: 95, 282
+  offset: 0, 0
+  index: -1
+USpouchA
+  rotate: true
+  xy: 94, 1290
+  size: 56, 93
+  orig: 56, 93
+  offset: 0, 0
+  index: -1
+USpouchB
+  rotate: true
+  xy: 1131, 797
+  size: 57, 61
+  orig: 57, 61
+  offset: 0, 0
+  index: -1
+USpouchC1
+  rotate: true
+  xy: 1066, 799
+  size: 55, 63
+  orig: 55, 63
+  offset: 0, 0
+  index: -1
+USpouchC3
+  rotate: false
+  xy: 1755, 1114
+  size: 57, 78
+  orig: 57, 78
+  offset: 0, 0
+  index: -1
+USpouchC4
+  rotate: true
+  xy: 859, 933
+  size: 78, 210
+  orig: 78, 210
+  offset: 0, 0
+  index: -1
+caraA
+  rotate: false
+  xy: 1456, 1101
+  size: 91, 116
+  orig: 91, 116
+  offset: 0, 0
+  index: -1
+caraA2
+  rotate: true
+  xy: 1566, 1319
+  size: 91, 116
+  orig: 91, 116
+  offset: 0, 0
+  index: -1
+caraB
+  rotate: true
+  xy: 1684, 1287
+  size: 91, 116
+  orig: 91, 116
+  offset: 0, 0
+  index: -1
+caraB2
+  rotate: true
+  xy: 1802, 1286
+  size: 91, 116
+  orig: 91, 116
+  offset: 0, 0
+  index: -1
+caraC
+  rotate: true
+  xy: 1920, 1272
+  size: 91, 116
+  orig: 91, 116
+  offset: 0, 0
+  index: -1
+caraC2
+  rotate: true
+  xy: 1513, 1226
+  size: 91, 116
+  orig: 91, 116
+  offset: 0, 0
+  index: -1
+casco3
+  rotate: true
+  xy: 1653, 1001
+  size: 111, 78
+  orig: 111, 78
+  offset: 0, 0
+  index: -1
+cigarro
+  rotate: true
+  xy: 605, 1528
+  size: 46, 11
+  orig: 46, 11
+  offset: 0, 0
+  index: -1
+collar
+  rotate: true
+  xy: 859, 861
+  size: 70, 210
+  orig: 70, 210
+  offset: 0, 0
+  index: -1
+collarB
+  rotate: true
+  xy: 1110, 1342
+  size: 81, 298
+  orig: 81, 298
+  offset: 0, 0
+  index: -1
+fusil
+  rotate: true
+  xy: 234, 1340
+  size: 518, 100
+  orig: 518, 100
+  offset: 0, 0
+  index: -1
+gun
+  rotate: true
+  xy: 1428, 1219
+  size: 122, 83
+  orig: 122, 83
+  offset: 0, 0
+  index: -1
+gunB
+  rotate: true
+  xy: 1733, 998
+  size: 114, 21
+  orig: 114, 21
+  offset: 0, 0
+  index: -1
+hammer
+  rotate: true
+  xy: 1849, 1592
+  size: 68, 130
+  orig: 68, 130
+  offset: 0, 0
+  index: -1
+hat
+  rotate: false
+  xy: 1920, 1365
+  size: 126, 72
+  orig: 126, 72
+  offset: 0, 0
+  index: -1
+hat2
+  rotate: true
+  xy: 1631, 1233
+  size: 84, 50
+  orig: 84, 50
+  offset: 0, 0
+  index: -1
+knife1/knife1_00004
+  rotate: true
+  xy: 1981, 1796
+  size: 250, 65
+  orig: 250, 65
+  offset: 0, 0
+  index: -1
+knife1/knife1_00005
+  rotate: true
+  xy: 1981, 1544
+  size: 250, 65
+  orig: 250, 65
+  offset: 0, 0
+  index: -1
+knife1/knife1_00006
+  rotate: false
+  xy: 1084, 1139
+  size: 250, 65
+  orig: 250, 65
+  offset: 0, 0
+  index: -1
+knife1/knife1_00007
+  rotate: false
+  xy: 1084, 1072
+  size: 250, 65
+  orig: 250, 65
+  offset: 0, 0
+  index: -1
+knife1/knife1_00008
+  rotate: false
+  xy: 1084, 1072
+  size: 250, 65
+  orig: 250, 65
+  offset: 0, 0
+  index: -1
+knife1/knife1_00009
+  rotate: false
+  xy: 1084, 1072
+  size: 250, 65
+  orig: 250, 65
+  offset: 0, 0
+  index: -1
+knife2/knife2_00004
+  rotate: false
+  xy: 1336, 1063
+  size: 118, 127
+  orig: 118, 127
+  offset: 0, 0
+  index: -1
+knife2/knife2_00005
+  rotate: false
+  xy: 1444, 1410
+  size: 118, 127
+  orig: 118, 127
+  offset: 0, 0
+  index: -1
+knife2/knife2_00006
+  rotate: false
+  xy: 1564, 1412
+  size: 118, 127
+  orig: 118, 127
+  offset: 0, 0
+  index: -1
+knife2/knife2_00007
+  rotate: false
+  xy: 1684, 1473
+  size: 118, 127
+  orig: 118, 127
+  offset: 0, 0
+  index: -1
+knife2/knife2_00008
+  rotate: true
+  xy: 1804, 1472
+  size: 118, 127
+  orig: 118, 127
+  offset: 0, 0
+  index: -1
+knife2/knife2_00009
+  rotate: true
+  xy: 1804, 1472
+  size: 118, 127
+  orig: 118, 127
+  offset: 0, 0
+  index: -1
+knifeA
+  rotate: false
+  xy: 118, 230
+  size: 38, 183
+  orig: 38, 183
+  offset: 0, 0
+  index: -1
+knifeB
+  rotate: true
+  xy: 1071, 901
+  size: 47, 168
+  orig: 47, 168
+  offset: 0, 0
+  index: -1
+knifehand
+  rotate: false
+  xy: 651, 617
+  size: 66, 175
+  orig: 66, 175
+  offset: 0, 0
+  index: -1
+knifehandnegro
+  rotate: true
+  xy: 1084, 950
+  size: 66, 175
+  orig: 66, 175
+  offset: 0, 0
+  index: -1
+lansallamas
+  rotate: false
+  xy: 2, 1860
+  size: 503, 186
+  orig: 503, 186
+  offset: 0, 0
+  index: -1
+lansallamastank
+  rotate: false
+  xy: 659, 822
+  size: 98, 54
+  orig: 98, 54
+  offset: 0, 0
+  index: -1
+manoIB
+  rotate: false
+  xy: 111, 2
+  size: 95, 70
+  orig: 95, 70
+  offset: 0, 0
+  index: -1
+manoIBnegro
+  rotate: false
+  xy: 1814, 1134
+  size: 95, 70
+  orig: 95, 70
+  offset: 0, 0
+  index: -1
+manoIC
+  rotate: false
+  xy: 1892, 1074
+  size: 71, 56
+  orig: 71, 56
+  offset: 0, 0
+  index: -1
+manoICnegro
+  rotate: false
+  xy: 1892, 1016
+  size: 71, 56
+  orig: 71, 56
+  offset: 0, 0
+  index: -1
+mascara2
+  rotate: false
+  xy: 429, 844
+  size: 128, 164
+  orig: 128, 164
+  offset: 0, 0
+  index: -1
+mascaraA
+  rotate: false
+  xy: 1549, 1108
+  size: 91, 116
+  orig: 91, 116
+  offset: 0, 0
+  index: -1
+mascaraA2
+  rotate: true
+  xy: 1683, 1194
+  size: 91, 116
+  orig: 91, 116
+  offset: 0, 0
+  index: -1
+metra
+  rotate: true
+  xy: 2, 1290
+  size: 568, 90
+  orig: 568, 90
+  offset: 0, 0
+  index: -1
+mortarAmmo
+  rotate: true
+  xy: 1071, 856
+  size: 43, 132
+  orig: 43, 132
+  offset: 0, 0
+  index: -1
+panzer
+  rotate: true
+  xy: 2, 412
+  size: 393, 56
+  orig: 393, 56
+  offset: 0, 0
+  index: -1
+puno
+  rotate: true
+  xy: 1911, 1132
+  size: 65, 103
+  orig: 65, 103
+  offset: 0, 0
+  index: -1
+she
+  rotate: true
+  xy: 1559, 1541
+  size: 118, 64
+  orig: 118, 64
+  offset: 0, 0
+  index: -1
+shotgun
+  rotate: true
+  xy: 2, 807
+  size: 481, 88
+  orig: 481, 88
+  offset: 0, 0
+  index: -1
+shotgunRe
+  rotate: false
+  xy: 1027, 1922
+  size: 93, 21
+  orig: 93, 21
+  offset: 0, 0
+  index: -1
+sniper
+  rotate: false
+  xy: 507, 1908
+  size: 518, 138
+  orig: 518, 138
+  offset: 0, 0
+  index: -1
+submetra
+  rotate: false
+  xy: 1549, 1946
+  size: 426, 100
+  orig: 426, 100
+  offset: 0, 0
+  index: -1

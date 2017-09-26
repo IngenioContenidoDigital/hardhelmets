@@ -1,0 +1,202 @@
+
+elementos.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1 copy 2
+  rotate: false
+  xy: 747, 178
+  size: 159, 72
+  orig: 159, 72
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: false
+  xy: 184, 11
+  size: 151, 42
+  orig: 151, 42
+  offset: 0, 0
+  index: -1
+Shape 6
+  rotate: true
+  xy: 2, 2
+  size: 70, 180
+  orig: 70, 180
+  offset: 0, 0
+  index: -1
+box
+  rotate: false
+  xy: 2, 160
+  size: 189, 84
+  orig: 189, 84
+  offset: 0, 0
+  index: -1
+break/break0000
+  rotate: false
+  xy: 747, 76
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0001
+  rotate: false
+  xy: 908, 150
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0002
+  rotate: false
+  xy: 1035, 150
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0003
+  rotate: false
+  xy: 1162, 150
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0004
+  rotate: false
+  xy: 1289, 150
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0005
+  rotate: false
+  xy: 1416, 150
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0006
+  rotate: false
+  xy: 1543, 150
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0007
+  rotate: false
+  xy: 1670, 150
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0008
+  rotate: false
+  xy: 1797, 150
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0009
+  rotate: true
+  xy: 1924, 125
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0010
+  rotate: false
+  xy: 874, 48
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0011
+  rotate: false
+  xy: 1001, 48
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0012
+  rotate: false
+  xy: 1128, 48
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0013
+  rotate: false
+  xy: 1255, 48
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+break/break0018
+  rotate: false
+  xy: 1382, 48
+  size: 125, 100
+  orig: 125, 100
+  offset: 0, 0
+  index: -1
+flame
+  rotate: false
+  xy: 2, 74
+  size: 189, 84
+  orig: 189, 84
+  offset: 0, 0
+  index: -1
+glow
+  rotate: false
+  xy: 1509, 98
+  size: 31, 50
+  orig: 31, 50
+  offset: 0, 0
+  index: -1
+grenade
+  rotate: true
+  xy: 193, 55
+  size: 189, 84
+  orig: 189, 84
+  offset: 0, 0
+  index: -1
+heavymachine
+  rotate: true
+  xy: 279, 55
+  size: 189, 84
+  orig: 189, 84
+  offset: 0, 0
+  index: -1
+machine
+  rotate: false
+  xy: 365, 166
+  size: 189, 84
+  orig: 189, 84
+  offset: 0, 0
+  index: -1
+rifle
+  rotate: false
+  xy: 365, 80
+  size: 189, 84
+  orig: 189, 84
+  offset: 0, 0
+  index: -1
+rope
+  rotate: false
+  xy: 2, 246
+  size: 336, 4
+  orig: 336, 4
+  offset: 0, 0
+  index: -1
+shotgun
+  rotate: false
+  xy: 556, 166
+  size: 189, 84
+  orig: 189, 84
+  offset: 0, 0
+  index: -1
+sniper
+  rotate: false
+  xy: 556, 80
+  size: 189, 84
+  orig: 189, 84
+  offset: 0, 0
+  index: -1
