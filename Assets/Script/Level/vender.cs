@@ -15,6 +15,7 @@ public class vender : MonoBehaviour {
 	public UnityEngine.UI.Image carta;
 
 	public int cantidad;
+	public int cantidadUsadas;
 	public int eliminar;
 
 	public UnityEngine.UI.Text una;
@@ -54,6 +55,7 @@ public class vender : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+		//cantidadUsadas = PlayerPrefs.GetInt("card"+nombre+"cantidadUsadas");
 		//cantidad = PlayerPrefs.GetInt("card"+nombre+"cantidad");
 
 		monedas = PlayerPrefs.GetInt("monedas");
@@ -137,15 +139,18 @@ public class vender : MonoBehaviour {
 
 	public void vendertodas()
 	{
-		if(eliminar == 1 && cantidad == 1)
+		if(eliminar == 1 && cantidad == 1 && cantidadUsadas == 0)
 		{
 			PlayerPrefs.SetInt("card"+nombre, 0);
 			PlayerPrefs.SetInt("card"+nombre+"cantidad", 0);
 			PlayerPrefs.SetInt("card"+nombre+"cantidadUsadas", 0);
-		}
-		cantidad -= eliminar;
+		}else if(cantidadUsadas >= 1)
+		{
+			cantidad -= eliminar;
+			PlayerPrefs.SetInt("card"+nombre+"cantidad", PlayerPrefs.GetInt("card"+nombre+"cantidad")-eliminar);
 
-		PlayerPrefs.SetInt("card"+nombre+"cantidad", PlayerPrefs.GetInt("card"+nombre+"cantidad")-eliminar);
+			//PlayerPrefs.SetInt("card"+nombre+"cantidadUsadas", cantidadUsadas);
+		}
 
 		monedas += valorTotal;
 		PlayerPrefs.SetInt("monedas", monedas);

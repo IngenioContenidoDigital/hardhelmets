@@ -26,16 +26,33 @@ public class CamMenu : MonoBehaviour {
 
 	public GameObject menu1;
 	public GameObject menu2;
+	public GameObject menu3;
 
 	//VOLUMEN
 	float efectos;
 	public AudioSource audio1;
 	public AudioSource audio2;
 
+	//CANTIDAD DE CAJAS DE MUNICION
+	public UnityEngine.UI.Text caja1T;
+	public UnityEngine.UI.Text caja2T;
+	public UnityEngine.UI.Text caja3T;
+
+	public int caja1;
+	public int caja2;
+	public int caja3;
+
 	// Use this for initialization
 	void Start ()
 	{
-		if(PlayerPrefs.GetInt("Primeravez") == 0)
+		Cursor.visible = true;
+
+		PlayerPrefs.SetFloat("voice",1);
+		PlayerPrefs.SetFloat("efects",1);
+		PlayerPrefs.SetFloat("musica",1);
+		PlayerPrefs.SetInt("violencia",1);
+
+		if(PlayerPrefs.GetInt("Primera") == 0)
 		{
 			//POR PRIMERA VEZ DESBLOQUEA TODO
 			PlayerPrefs.SetFloat("voice",1);
@@ -64,6 +81,10 @@ public class CamMenu : MonoBehaviour {
 			PlayerPrefs.SetInt("card19", 0);
 			PlayerPrefs.SetInt("card20", 0);
 			print(PlayerPrefs.GetInt("card1"));
+			//CANTIDAD DE CAJAS de cartas
+			PlayerPrefs.SetInt("caja1",0);
+			PlayerPrefs.SetInt("caja2",0);
+			PlayerPrefs.SetInt("caja3",0);
 			//SELECCIONA UNA BARAJA BASICA
 			PlayerPrefs.SetInt("Mano1", 0);
 			PlayerPrefs.SetInt("Mano2", 0);
@@ -149,7 +170,7 @@ public class CamMenu : MonoBehaviour {
 			PlayerPrefs.SetString("casco","Casco1");
 			PlayerPrefs.SetString("cara","Cara1");
 			//DEJA DE SER LA PRIMERA VEZ
-			PlayerPrefs.SetInt("Primeravez",1);
+			PlayerPrefs.SetInt("Primera",1);
 		}
 
 		efectos = PlayerPrefs.GetFloat("efects");
@@ -158,11 +179,23 @@ public class CamMenu : MonoBehaviour {
 		StartCoroutine(espera());
 
 		secundaria = new Vector3(25.6f,transform.position.y, transform.position.z);
+
+		caja1 = 5;//PlayerPrefs.GetInt("caja1");
+		caja2 = 3;//PlayerPrefs.GetInt("caja2");
+		caja3 = 1;//PlayerPrefs.GetInt("caja3");
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
+		PlayerPrefs.SetInt("caja1", caja1);
+		PlayerPrefs.SetInt("caja2", caja2);
+		PlayerPrefs.SetInt("caja3", caja3);
+
+		caja1T.text = caja1.ToString();
+		caja2T.text = caja2.ToString();
+		caja3T.text = caja3.ToString();
+
 		if(listo)
 		{
 			h = valor * Input.GetAxis("Mouse X");
@@ -220,6 +253,19 @@ public class CamMenu : MonoBehaviour {
 			listo = true;
 			segundo = false;
 		}
+		//ANIMACIONES MENU
+		if(menu1.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("menu1salida"))
+		{
+			menu1.GetComponent<Animator>().SetBool("entrada",false);
+		}
+		if(menu2.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("menu2Salida"))
+		{
+			menu2.GetComponent<Animator>().SetBool("entrada",false);
+		}
+		if(menu3.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("menu3Salida"))
+		{
+			menu3.GetComponent<Animator>().SetBool("entrada",false);
+		}
 	}
 
 	IEnumerator espera ()
@@ -258,6 +304,30 @@ public class CamMenu : MonoBehaviour {
 		primera = true;
 	}
 
+	public void Regresar2()
+	{
+		audio1.volume = efectos;
+		audio1.Play();
+
+		menu3.GetComponent<Animator>().SetBool("salida",true);
+		menu3.GetComponent<Animator>().SetBool("entrada",false);
+
+		menu2.GetComponent<Animator>().SetBool("entrada",true);
+		menu2.GetComponent<Animator>().SetBool("salida",false);
+	}
+
+	public void Supplies()
+	{
+		audio1.volume = efectos;
+		audio1.Play();
+
+		menu2.GetComponent<Animator>().SetBool("salida",true);
+		menu2.GetComponent<Animator>().SetBool("entrada",false);
+
+		menu3.GetComponent<Animator>().SetBool("entrada",true);
+		menu3.GetComponent<Animator>().SetBool("salida",false);
+	}
+
 	public void Custom()
 	{
 		audio1.volume = efectos;
@@ -266,13 +336,42 @@ public class CamMenu : MonoBehaviour {
 		Application.LoadLevel("Load");
 		loading.nombre = "Custom";
 	}
+
 	public void Cajas()
 	{
-		audio1.volume = efectos;
-		audio1.Play();
+		if(caja1 >= 1)
+		{
+			caja1 -= 1;
+			audio1.volume = efectos;
+			audio1.Play();
 
-		Application.LoadLevel("Load");
-		loading.nombre = "cajas";
+			Application.LoadLevel("Load");
+			loading.nombre = "cajas";
+		}
+	}
+	public void Cajas2()
+	{
+		if(caja2 >= 1)
+		{
+			caja2 -= 1;
+			audio1.volume = efectos;
+			audio1.Play();
+
+			Application.LoadLevel("Load");
+			loading.nombre = "cajas2";
+		}
+	}
+	public void Cajas3()
+	{
+		if(caja3 >= 1)
+		{
+			caja3 -= 1;
+			audio1.volume = efectos;
+			audio1.Play();
+
+			Application.LoadLevel("Load");
+			loading.nombre = "cajas3";
+		}
 	}
 
 	public void Cartas()

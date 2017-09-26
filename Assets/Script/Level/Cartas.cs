@@ -819,16 +819,76 @@ public class Cartas : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		unoCantidadT.text = unoCantidad.ToString();
-		dosCantidadT.text = dosCantidad.ToString();
-		tresCantidadT.text = tresCantidad.ToString();
-		cuatroCantidadT.text = cuatroCantidad.ToString();
-		cincoCantidadT.text = cincoCantidad.ToString();
-		seisCantidadT.text = seisCantidad.ToString();
-		sieteCantidadT.text = sieteCantidad.ToString();
-		ochoCantidadT.text = ochoCantidad.ToString();
-		nueveCantidadT.text = nueveCantidad.ToString();
-		diezCantidadT.text = diezCantidad.ToString();
+		if(unoCantidad == 0)
+		{
+			unoCantidadT.text = "";
+		}else
+		{
+			unoCantidadT.text = unoCantidad.ToString();
+		}
+		if(dosCantidad == 0)
+		{
+			dosCantidadT.text = "";
+		}else
+		{
+			dosCantidadT.text = dosCantidad.ToString();
+		}
+		if(tresCantidad == 0)
+		{
+			tresCantidadT.text = "";
+		}else
+		{
+			tresCantidadT.text = tresCantidad.ToString();
+		}
+		if(cuatroCantidad == 0)
+		{
+			cuatroCantidadT.text = "";
+		}else
+		{
+			cuatroCantidadT.text = cuatroCantidad.ToString();
+		}
+		if(cincoCantidad == 0)
+		{
+			cincoCantidadT.text = "";
+		}else
+		{
+			cincoCantidadT.text = cincoCantidad.ToString();
+		}
+		if(seisCantidad == 0)
+		{
+			seisCantidadT.text = "";
+		}else
+		{
+			seisCantidadT.text = seisCantidad.ToString();
+		}
+		if(sieteCantidad == 0)
+		{
+			sieteCantidadT.text = "";
+		}else
+		{
+			sieteCantidadT.text = sieteCantidad.ToString();
+		}
+		if(ochoCantidad == 0)
+		{
+			ochoCantidadT.text = "";
+		}else
+		{
+			ochoCantidadT.text = ochoCantidad.ToString();
+		}
+		if(nueveCantidad == 0)
+		{
+			nueveCantidadT.text = "";
+		}else
+		{
+			nueveCantidadT.text = nueveCantidad.ToString();
+		}
+		if(diezCantidad == 0)
+		{
+			diezCantidadT.text = "";
+		}else
+		{
+			diezCantidadT.text = diezCantidad.ToString();
+		}
 
 		if(seleccionada == 1)
 		{

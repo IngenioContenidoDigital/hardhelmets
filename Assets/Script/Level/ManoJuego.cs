@@ -161,6 +161,7 @@ public class ManoJuego : MonoBehaviour {
 			animacion.GetComponent<skinCarta>().skinsToCombine[0] = "20";
 			//imagen.sprite = a20;
 		}
+		cantidadTotal = PlayerPrefs.GetInt("card"+nombre+"cantidad");
 	}
 	/*bool entrance;
 	bool animandoentrada;
@@ -172,7 +173,11 @@ public class ManoJuego : MonoBehaviour {
 	{
 		cantidadT.text = cantidad.ToString();
 
-		cantidadTotal = PlayerPrefs.GetInt("card"+nombre+"cantidad");
+		if(cantidadTotal <= 0)
+		{
+			cantidadTotal = 0;
+			PlayerPrefs.SetInt("card"+nombre, 0);
+		}
 		PlayerPrefs.SetInt("card"+nombre+"cantidad", cantidadTotal);
 
 		PlayerPrefs.SetInt("Mano"+nombre2+"cantidad", cantidad);
