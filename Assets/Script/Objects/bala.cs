@@ -6,6 +6,7 @@ public class bala : MonoBehaviour {
 
 	public GameObject efecto;
 	int efect;
+	public GameObject humo;
 
 	// Use this for initialization
 	void Start ()
@@ -28,6 +29,8 @@ public class bala : MonoBehaviour {
 			explo.GetComponent<Animator>().SetInteger("efect",efect);
 			Destroy(explo, 2.0f);
 		}
+		humo.transform.parent = null;
+		Destroy(humo,3);
 		Destroy(gameObject);
 	}
 }

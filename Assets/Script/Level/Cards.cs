@@ -119,7 +119,7 @@ public class Cards : MonoBehaviour {
 					Cartas.diezCantidad += 1;
 				}
 			}
-			print("ACA ESTO");
+
 			cantidad -= 1;
 			if(cantidad <= 0)
 			{
@@ -128,6 +128,58 @@ public class Cards : MonoBehaviour {
 			//usada = true;
 			//GetComponent<Button>().enabled = false;
 			//GetComponent<Image>().color = new Color32(100,100,100,100);
+		}
+		if(Cartas.uno != 0 && Cartas.dos != 0 && Cartas.tres != 0 && Cartas.cuatro != 0 && Cartas.cinco != 0 &&
+			Cartas.seis != 0 && Cartas.siete != 0 && Cartas.ocho != 0 && Cartas.nueve != 0 && Cartas.diez != 0)
+		{
+			Cartas.seleccionada = carta;
+
+			if(carta == Cartas.uno)
+			{
+				cantidad -= 1;
+				Cartas.unoCantidad += 1;
+			}else if(carta == Cartas.dos)
+			{
+				cantidad -= 1;
+				Cartas.dosCantidad += 1;
+			}else if(carta == Cartas.tres)
+			{
+				cantidad -= 1;
+				Cartas.tresCantidad += 1;
+			}else if(carta == Cartas.cuatro)
+			{
+				cantidad -= 1;
+				Cartas.cuatroCantidad += 1;
+			}else if(carta == Cartas.cinco)
+			{
+				cantidad -= 1;
+				Cartas.cincoCantidad += 1;
+			}else if(carta == Cartas.seis)
+			{
+				cantidad -= 1;
+				Cartas.seisCantidad += 1;
+			}else if(carta == Cartas.siete)
+			{
+				cantidad -= 1;
+				Cartas.sieteCantidad += 1;
+			}else if(carta == Cartas.ocho)
+			{
+				cantidad -= 1;
+				Cartas.ochoCantidad += 1;
+			}else if(carta == Cartas.nueve)
+			{
+				cantidad -= 1;
+				Cartas.nueveCantidad += 1;
+			}else if(carta == Cartas.diez)
+			{
+				cantidad -= 1;
+				Cartas.diezCantidad += 1;
+			}
+				
+			if(cantidad <= 0)
+			{
+				usada = true;
+			}
 		}
 	}
 	public Sprite atras;

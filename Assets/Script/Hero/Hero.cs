@@ -1149,18 +1149,22 @@ public class Hero : MonoBehaviour {
 		{
 			if (direction == "right")
 			{
-				GetComponent<ISkeletonComponent>().Skeleton.FlipX = false;
-				Girar.transform.Rotate (0, 180, 0);
+				transform.localScale = new Vector3(1,1,1);
 				Girar2.transform.Rotate (0, 180, 0);
-				//transform.Rotate (0, 180, 0);
+				//ORIGINAL
+				//GetComponent<ISkeletonComponent>().Skeleton.FlipX = false;
+				//Girar.transform.Rotate (0, 180, 0);
+				//Girar2.transform.Rotate (0, 180, 0);
 				_currentDirection = "right";
 			} 
 			else if (direction == "left") 
 			{
-				GetComponent<ISkeletonComponent>().Skeleton.FlipX = true;
-				Girar.transform.Rotate (0, -180, 0);
+				transform.localScale = new Vector3(-1,1,1);
 				Girar2.transform.Rotate (0, -180, 0);
-				//transform.Rotate (0, -180, 0);
+				//ORIGINAL
+				//GetComponent<ISkeletonComponent>().Skeleton.FlipX = true;
+				//Girar.transform.Rotate (0, -180, 0);
+				//Girar2.transform.Rotate (0, -180, 0);
 				_currentDirection = "left";
 			}
 		}

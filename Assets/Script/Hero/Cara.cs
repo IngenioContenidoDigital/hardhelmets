@@ -142,14 +142,26 @@ public class Cara : MonoBehaviour {
 
 	public void prev ()
 	{
+		if(item == 1)
+		{
+			item = 5;
+		}else
+		{
+			item -= 1;
+		}
 		s_cambia();
-		item -= 1;
 	}
 
 	public void next ()
 	{
+		if(item == 5)
+		{
+			item = 1;
+		}else
+		{
+			item += 1;
+		}
 		s_cambia();
-		item += 1;
 	}
 
 	public void select ()
