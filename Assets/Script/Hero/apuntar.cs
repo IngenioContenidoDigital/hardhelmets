@@ -31,7 +31,7 @@ public class apuntar : MonoBehaviour {
 
 	Vector3 mousePosition;
 	Vector2 todo;
-	float ye;
+	public float ye;
 
 	public static Vector3 Inicial;
 
@@ -46,7 +46,13 @@ public class apuntar : MonoBehaviour {
 	void Update ()
 	{
 		ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		ye = hit.point.y;
+		if(hit.point.y >= -31)
+		{
+			ye = hit.point.y-0.5f;
+		}else
+		{
+			ye = hit.point.y;
+		}
 
 		if(Physics.Raycast(ray, out hit, Mathf.Infinity))
 		{

@@ -24,6 +24,7 @@ public class Sonidos : MonoBehaviour {
 	void Start ()
 	{
 		efectos = PlayerPrefs.GetFloat("efects");
+		gritar();
 	}
 
 	//DISPAROS ------------------
@@ -224,6 +225,14 @@ public class Sonidos : MonoBehaviour {
 	{
 		audio3.volume = efectos;
 		audio3.clip = xx[Random.Range(0,xx.Length)];
+		audio3.Play();
+	}
+	public AudioClip[] grito;
+
+	public void gritar ()
+	{
+		audio3.volume = efectos;
+		audio3.clip = grito[Random.Range(0,grito.Length)];
 		audio3.Play();
 	}
 }

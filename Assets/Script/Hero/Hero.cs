@@ -145,7 +145,7 @@ public class Hero : MonoBehaviour {
 			if(PlayerPrefs.GetInt("violencia") == 1)
 			{
 				print("Violento");
-				SniperCam.GetComponent<BleedBehavior>().EdgeSharpness = 0.75f;//0.8
+				SniperCam.GetComponent<BleedBehavior>().EdgeSharpness = 0.65f;//0.8
 				SniperCam.GetComponent<BleedBehavior>().minAlpha = 0.5f+0-salud/100;//0.2
 			}
 			Health.color = new Color32(255,0,0,255);

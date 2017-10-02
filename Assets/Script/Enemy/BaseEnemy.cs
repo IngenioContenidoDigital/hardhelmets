@@ -17,7 +17,7 @@ public class BaseEnemy : MonoBehaviour {
 
 	void Update ()
 	{
-		//salud.fillAmount = sangre/100;
+		salud.fillAmount = sangre/1000;
 
 		if(sangre <= 0)
 		{

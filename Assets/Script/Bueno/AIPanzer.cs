@@ -48,11 +48,6 @@ public class AIPanzer : MonoBehaviour {
 	int azar;
 
 	public Transform cascadoSpawn;
-	public GameObject efecto;
-	public GameObject efecto2;
-	public GameObject efecto3;
-	public GameObject efecto4;
-	int efect;
 	public GameObject carne;
 
 	//FUNCIONES ALEATORIAS
@@ -95,8 +90,9 @@ public class AIPanzer : MonoBehaviour {
 	//MUERE CON EXPLOCION
 	bool explocion;
 	public GameObject Huesos;
-
 	public GameObject[] sangreCuchillo;
+
+	public GameObject[] efectoSanre;
 
 	// Use this for initialization
 	void Start ()
@@ -569,12 +565,13 @@ public class AIPanzer : MonoBehaviour {
 			animator.SetBool("walking", false);
 			caminar = false;
 			alejarce = false;
+			GetComponent<Rigidbody>().velocity = Vector3.zero;
+			caminar2 = false;
+			alejarce2 = false;
 			animator.SetInteger("cascado", 4);
-			efect = Random.Range(3,5);
 			if(PlayerPrefs.GetInt("violencia") == 1)
 			{
 				var sangre2 = (GameObject)Instantiate(sangreCuchillo[Random.Range(0,sangreCuchillo.Length)], cascadoSpawn.position, cascadoSpawn.rotation); 
-				var explo = (GameObject)Instantiate(efecto, cascadoSpawn.position, cascadoSpawn.rotation); 
 			}
 			salud -= 50;
 
@@ -590,6 +587,9 @@ public class AIPanzer : MonoBehaviour {
 			animator.SetBool("walking", false);
 			caminar = false;
 			alejarce = false;
+			GetComponent<Rigidbody>().velocity = Vector3.zero;
+			caminar2 = false;
+			alejarce2 = false;
 			animator.SetInteger("cascado", 1);
 			Destroy(col.gameObject);
 			salud -= 15;
@@ -597,6 +597,11 @@ public class AIPanzer : MonoBehaviour {
 			var letras = (GameObject)Instantiate(textos, new Vector3(transform.position.x, transform.position.y+9,transform.position.z), Quaternion.Euler(0,0,0));
 			letras.transform.parent = transform;
 			letras.GetComponent<TextMesh>().text = "15";
+
+			if(PlayerPrefs.GetInt("violencia") == 1)
+			{
+				var explo = (GameObject)Instantiate(efectoSanre[Random.Range(0,efectoSanre.Length)], new Vector3(col.gameObject.transform.position.x,col.gameObject.transform.position.y-3, col.gameObject.transform.position.z-1), cascadoSpawn.rotation);
+			}
 		}
 		if(col.gameObject.tag == "balaFusil" && vivo)
 		{
@@ -606,6 +611,9 @@ public class AIPanzer : MonoBehaviour {
 			animator.SetBool("walking", false);
 			caminar = false;
 			alejarce = false;
+			GetComponent<Rigidbody>().velocity = Vector3.zero;
+			caminar2 = false;
+			alejarce2 = false;
 			animator.SetInteger("cascado", 1);
 			Destroy(col.gameObject);
 			salud -= 40;
@@ -613,6 +621,11 @@ public class AIPanzer : MonoBehaviour {
 			var letras = (GameObject)Instantiate(textos, new Vector3(transform.position.x, transform.position.y+9,transform.position.z), Quaternion.Euler(0,0,0));
 			letras.transform.parent = transform;
 			letras.GetComponent<TextMesh>().text = "40";
+
+			if(PlayerPrefs.GetInt("violencia") == 1)
+			{
+				var explo = (GameObject)Instantiate(efectoSanre[Random.Range(0,efectoSanre.Length)], new Vector3(col.gameObject.transform.position.x,col.gameObject.transform.position.y-3, col.gameObject.transform.position.z-1), cascadoSpawn.rotation);
+			}
 		}
 		if(col.gameObject.tag == "balaEscopeta" && vivo)
 		{
@@ -622,6 +635,9 @@ public class AIPanzer : MonoBehaviour {
 			animator.SetBool("walking", false);
 			caminar = false;
 			alejarce = false;
+			GetComponent<Rigidbody>().velocity = Vector3.zero;
+			caminar2 = false;
+			alejarce2 = false;
 			animator.SetInteger("cascado", 1);
 			Destroy(col.gameObject);
 			salud -= 15;
@@ -629,6 +645,11 @@ public class AIPanzer : MonoBehaviour {
 			var letras = (GameObject)Instantiate(textos, new Vector3(transform.position.x, transform.position.y+9,transform.position.z), Quaternion.Euler(0,0,0));
 			letras.transform.parent = transform;
 			letras.GetComponent<TextMesh>().text = "15";
+
+			if(PlayerPrefs.GetInt("violencia") == 1)
+			{
+				var explo = (GameObject)Instantiate(efectoSanre[Random.Range(0,efectoSanre.Length)], new Vector3(col.gameObject.transform.position.x,col.gameObject.transform.position.y-3, col.gameObject.transform.position.z-1), cascadoSpawn.rotation);
+			}
 		}
 		if(col.gameObject.tag == "balaSubmetra" && vivo)
 		{
@@ -638,6 +659,9 @@ public class AIPanzer : MonoBehaviour {
 			animator.SetBool("walking", false);
 			caminar = false;
 			alejarce = false;
+			GetComponent<Rigidbody>().velocity = Vector3.zero;
+			caminar2 = false;
+			alejarce2 = false;
 			animator.SetInteger("cascado", 1);
 			Destroy(col.gameObject);
 			salud -= 20;
@@ -645,6 +669,11 @@ public class AIPanzer : MonoBehaviour {
 			var letras = (GameObject)Instantiate(textos, new Vector3(transform.position.x, transform.position.y+9,transform.position.z), Quaternion.Euler(0,0,0));
 			letras.transform.parent = transform;
 			letras.GetComponent<TextMesh>().text = "20";
+
+			if(PlayerPrefs.GetInt("violencia") == 1)
+			{
+				var explo = (GameObject)Instantiate(efectoSanre[Random.Range(0,efectoSanre.Length)], new Vector3(col.gameObject.transform.position.x,col.gameObject.transform.position.y-3, col.gameObject.transform.position.z-1), cascadoSpawn.rotation);
+			}
 		}
 		if(col.gameObject.tag == "balaMetra" && vivo)
 		{
@@ -654,6 +683,9 @@ public class AIPanzer : MonoBehaviour {
 			animator.SetBool("walking", false);
 			caminar = false;
 			alejarce = false;
+			GetComponent<Rigidbody>().velocity = Vector3.zero;
+			caminar2 = false;
+			alejarce2 = false;
 			animator.SetInteger("cascado", 1);
 			Destroy(col.gameObject);
 			salud -= 25;
@@ -661,6 +693,11 @@ public class AIPanzer : MonoBehaviour {
 			var letras = (GameObject)Instantiate(textos, new Vector3(transform.position.x, transform.position.y+9,transform.position.z), Quaternion.Euler(0,0,0));
 			letras.transform.parent = transform;
 			letras.GetComponent<TextMesh>().text = "25";
+
+			if(PlayerPrefs.GetInt("violencia") == 1)
+			{
+				var explo = (GameObject)Instantiate(efectoSanre[Random.Range(0,efectoSanre.Length)], new Vector3(col.gameObject.transform.position.x,col.gameObject.transform.position.y-3, col.gameObject.transform.position.z-1), cascadoSpawn.rotation);
+			}
 		}
 		if(col.gameObject.tag == "balaMG" && vivo)
 		{
@@ -670,6 +707,9 @@ public class AIPanzer : MonoBehaviour {
 			animator.SetBool("walking", false);
 			caminar = false;
 			alejarce = false;
+			GetComponent<Rigidbody>().velocity = Vector3.zero;
+			caminar2 = false;
+			alejarce2 = false;
 			animator.SetInteger("cascado", 1);
 			Destroy(col.gameObject);
 			salud -= 25;
@@ -677,6 +717,11 @@ public class AIPanzer : MonoBehaviour {
 			var letras = (GameObject)Instantiate(textos, new Vector3(transform.position.x, transform.position.y+9,transform.position.z), Quaternion.Euler(0,0,0));
 			letras.transform.parent = transform;
 			letras.GetComponent<TextMesh>().text = "25";
+
+			if(PlayerPrefs.GetInt("violencia") == 1)
+			{
+				var explo = (GameObject)Instantiate(efectoSanre[Random.Range(0,efectoSanre.Length)], new Vector3(col.gameObject.transform.position.x,col.gameObject.transform.position.y-3, col.gameObject.transform.position.z-1), cascadoSpawn.rotation);
+			}
 		}
 		if(col.gameObject.tag == "balaSniper" && vivo)
 		{
@@ -686,6 +731,9 @@ public class AIPanzer : MonoBehaviour {
 			animator.SetBool("walking", false);
 			caminar = false;
 			alejarce = false;
+			GetComponent<Rigidbody>().velocity = Vector3.zero;
+			caminar2 = false;
+			alejarce2 = false;
 			animator.SetInteger("cascado", 1);
 			col.gameObject.SetActive(false);
 			salud -= 100;
@@ -693,9 +741,17 @@ public class AIPanzer : MonoBehaviour {
 			var letras = (GameObject)Instantiate(textos, new Vector3(transform.position.x, transform.position.y+9,transform.position.z), Quaternion.Euler(0,0,0));
 			letras.transform.parent = transform;
 			letras.GetComponent<TextMesh>().text = "100";
+
+			if(PlayerPrefs.GetInt("violencia") == 1)
+			{
+				var explo = (GameObject)Instantiate(efectoSanre[Random.Range(0,efectoSanre.Length)], new Vector3(col.gameObject.transform.position.x,col.gameObject.transform.position.y-3, col.gameObject.transform.position.z-1), cascadoSpawn.rotation);
+			}
 		}
 		if(col.gameObject.tag == "explo" && vivo)
 		{
+			GetComponent<Rigidbody>().velocity = Vector3.zero;
+			caminar2 = false;
+			alejarce2 = false;
 			if(PlayerPrefs.GetInt("violencia") == 1)
 			{
 				explocion = true;
@@ -721,6 +777,9 @@ public class AIPanzer : MonoBehaviour {
 		if(col.gameObject.tag == NameEnemyTank && vivo)
 		{
 			print(col.gameObject.GetComponent<Rigidbody>().velocity.x);
+			GetComponent<Rigidbody>().velocity = Vector3.zero;
+			caminar2 = false;
+			alejarce2 = false;
 			if(col.gameObject.GetComponent<Rigidbody>().velocity.x > 2.5f)
 			{
 				salud -= 100;
@@ -731,14 +790,7 @@ public class AIPanzer : MonoBehaviour {
 
 				if(PlayerPrefs.GetInt("violencia") == 1)
 				{
-					efect = Random.Range(1,3);
-					if(efect == 1)
-					{
-						var explo = (GameObject)Instantiate(efecto2, cascadoSpawn.position, cascadoSpawn.rotation);
-					}else
-					{
-						var explo = (GameObject)Instantiate(efecto3, cascadoSpawn.position, cascadoSpawn.rotation);
-					}
+					var explo = (GameObject)Instantiate(efectoSanre[Random.Range(0,efectoSanre.Length)], new Vector3(col.gameObject.transform.position.x,col.gameObject.transform.position.y-3, col.gameObject.transform.position.z-1), cascadoSpawn.rotation);
 				}
 			}
 		}

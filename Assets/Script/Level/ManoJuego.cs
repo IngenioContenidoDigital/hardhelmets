@@ -298,8 +298,6 @@ public class ManoJuego : MonoBehaviour {
 	public GameObject llamero;
 	public GameObject heavyTank;
 
-
-
 	public void OnDragEnd ()//(PointerEventData eventData)
 	{
 		if(arrastrar)
