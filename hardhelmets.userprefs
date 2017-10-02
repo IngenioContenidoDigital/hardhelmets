@@ -1,9 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Hero\Animaciones.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Hero\Hero.cs">
     <Files>
-      <File FileName="Assets\Script\Objects\bala.cs" Line="24" Column="61" />
-      <File FileName="Assets\Script\Hero\Animaciones.cs" Line="264" Column="86" />
+      <File FileName="Assets\Script\Hero\Hero.cs" Line="148" Column="72" />
+      <File FileName="Assets\Script\Bueno\AI.cs" Line="622" Column="4" />
+      <File FileName="Assets\Script\Enemy\EnemyMetra.cs" Line="150" Column="16" />
+      <File FileName="Assets\Script\Enemy\EnemyMortero.cs" Line="161" Column="4" />
+      <File FileName="Assets\Script\Bueno\AIPanzer.cs" Line="579" Column="16" />
+      <File FileName="Assets\Script\Hero\Sonidos.cs" Line="196" Column="50" />
+      <File FileName="Assets\Script\Level\ManoJuego.cs" Line="187" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

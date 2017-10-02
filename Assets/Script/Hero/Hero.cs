@@ -117,6 +117,10 @@ public class Hero : MonoBehaviour {
 	bool efectodisparo;
 	bool efectodisparosumar;
 
+	//MUERE CON EXPLOCION
+	bool explocion;
+	public GameObject Huesos;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -136,13 +140,13 @@ public class Hero : MonoBehaviour {
 			saludSumar = false;
 		}
 
-		if(salud <= saludMax*50/100)
+		if(salud <= saludMax*70/100)
 		{
 			if(PlayerPrefs.GetInt("violencia") == 1)
 			{
 				print("Violento");
-				SniperCam.GetComponent<BleedBehavior>().EdgeSharpness = 0.8f;
-				SniperCam.GetComponent<BleedBehavior>().minAlpha = 0.6f+0-salud/100;//0.2
+				SniperCam.GetComponent<BleedBehavior>().EdgeSharpness = 0.75f;//0.8
+				SniperCam.GetComponent<BleedBehavior>().minAlpha = 0.5f+0-salud/100;//0.2
 			}
 			Health.color = new Color32(255,0,0,255);
 		}else
@@ -962,11 +966,18 @@ public class Hero : MonoBehaviour {
 			//SI SE MUERE
 			if(salud <= 0)
 			{
+				if(explocion)
+				{
+					var bones = (GameObject)Instantiate(Huesos, casquilloSpawn.position, transform.rotation); 
+				}
 				animator.SetBool("muerto", true);
 				muerte = Random.Range(1,3);
 				animator.SetInteger("muerte", muerte);
 				vivo = false;
 				StartCoroutine(muertee());
+			}else
+			{
+				explocion = false;
 			}
 			//SI ESTA EN SNIPER
 			if(sniperListo)
@@ -1288,6 +1299,10 @@ public class Hero : MonoBehaviour {
 		}
 		if(col.gameObject.tag == "explo")
 		{
+			if(PlayerPrefs.GetInt("violencia") == 1)
+			{
+				explocion = true;
+			}
 			salud -= 50;
 			animator.SetBool("granada", true);
 			animator.SetInteger("cascado", 10);

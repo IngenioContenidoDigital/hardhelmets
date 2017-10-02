@@ -184,6 +184,7 @@ public class ManoJuego : MonoBehaviour {
 
 		if(cantidad <= 0)
 		{
+			cantidadT.text = "";
 			//PlayerPrefs.SetInt("card"+nombre, 0);
 			PlayerPrefs.SetInt("Mano"+nombre2, 0);
 			//PlayerPrefs.SetInt("card"+nombre+"cantidad", 0);

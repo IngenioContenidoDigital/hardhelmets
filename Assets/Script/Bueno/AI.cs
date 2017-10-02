@@ -105,6 +105,12 @@ public class AI : MonoBehaviour {
 	//ESQUIVAR OBSTACULOS
 	bool devolver;
 
+	//MUERE CON EXPLOCION
+	bool explocion;
+	public GameObject Huesos;
+
+	public GameObject[] sangreCuchillo;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -297,13 +303,22 @@ public class AI : MonoBehaviour {
 
 				if(salud <= 0)
 				{
-					animator.SetBool("muerto", true);
-					azar = Random.Range(1,3);
-					animator.SetInteger("muerte", azar);
+					if(explocion)
+					{
+						animator.SetInteger("muerte", 3);
+						var bones = (GameObject)Instantiate(Huesos, casquilloSpawn.position, transform.rotation); 
+					}else
+					{
+						animator.SetBool("muerto", true);
+						int azar = Random.Range(1,3);
+						animator.SetInteger("muerte", azar);
+					}
 					vivo = false;
 				}
 			}else
 			{
+				explocion = false;
+
 				mira.SetActive(false);
 				if(matrix == 1 && !matrix2 && Player.name == "Hero")
 				{
@@ -340,9 +355,16 @@ public class AI : MonoBehaviour {
 
 				if(salud <= 0)
 				{
-					animator.SetBool("muerto", true);
-					int azar = Random.Range(1,3);
-					animator.SetInteger("muerte", azar);
+					if(explocion)
+					{
+						animator.SetInteger("muerte", 3);
+						var bones = (GameObject)Instantiate(Huesos, casquilloSpawn.position, transform.rotation); 
+					}else
+					{
+						animator.SetBool("muerto", true);
+						int azar = Random.Range(1,3);
+						animator.SetInteger("muerte", azar);
+					}
 					vivo = false;
 
 					gameObject.layer = LayerMask.NameToLayer("muerto");
@@ -437,6 +459,8 @@ public class AI : MonoBehaviour {
 				}
 			}else
 			{
+				explocion = false;
+
 				mira.SetActive(false);
 				gameObject.layer = LayerMask.NameToLayer("muerto");
 				gameObject.tag = "Untagged";
@@ -603,6 +627,7 @@ public class AI : MonoBehaviour {
 			//efect = Random.Range(3,5);
 			if(PlayerPrefs.GetInt("violencia") == 1)
 			{
+				var sangre2 = (GameObject)Instantiate(sangreCuchillo[Random.Range(0,sangreCuchillo.Length)], cascadoSpawn.position, cascadoSpawn.rotation); 
 				var explo = (GameObject)Instantiate(efecto, cascadoSpawn.position, cascadoSpawn.rotation); 
 			}
 			salud -= 50;
@@ -802,11 +827,11 @@ public class AI : MonoBehaviour {
 		}
 		if(col.gameObject.tag == "explo" && vivo)
 		{
-			vivo = false;
+			/*vivo = false;
 			Instantiate(carne, cascadoSpawn.position, cascadoSpawn.rotation);
 			GetComponent<Rigidbody>().AddForce(transform.right * Random.Range(500,-500));
 			GetComponent<Rigidbody>().velocity = (Vector2.up * Random.Range(10,25));
-			animator.SetInteger("muerte", 3);
+			animator.SetInteger("muerte", 3);*/
 			salud -= 50;
 
 			var letras = (GameObject)Instantiate(textos, new Vector3(transform.position.x, transform.position.y+9,transform.position.z), Quaternion.Euler(0,180,0));
@@ -815,6 +840,8 @@ public class AI : MonoBehaviour {
 
 			if(PlayerPrefs.GetInt("violencia") == 1)
 			{
+				explocion = true;
+
 				var explo = (GameObject)Instantiate(efecto4, cascadoSpawn.position, cascadoSpawn.rotation);
 			}
 		}

@@ -49,6 +49,12 @@ public class EnemyMetra : MonoBehaviour {
 
 	public GameObject mira;
 
+	//MUERE CON EXPLOCION
+	bool explocion;
+	public GameObject Huesos;
+
+	public GameObject[] sangreCuchillo;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -106,12 +112,20 @@ public class EnemyMetra : MonoBehaviour {
 				
 			if(salud <= 0)
 			{
-				azar = Random.Range(1,3);
-				animator.SetInteger("muerte", azar);
+				if(explocion)
+				{
+					animator.SetInteger("muerte", 3);
+					var bones = (GameObject)Instantiate(Huesos, transform.position, transform.rotation); 
+				}else
+				{
+					int azar = Random.Range(1,3);
+					animator.SetInteger("muerte", azar);
+				}
 				vivo = false;
 			}
 		}else
 		{
+			explocion = false;
 			mira.SetActive(false);
 			if(matrix == 1 && !matrix2 && Player.name == "Hero")
 			{
@@ -130,9 +144,8 @@ public class EnemyMetra : MonoBehaviour {
 			efect = Random.Range(3,5);
 			if(PlayerPrefs.GetInt("violencia") == 1)
 			{
+				var sangre2 = (GameObject)Instantiate(sangreCuchillo[Random.Range(0,sangreCuchillo.Length)], cascadoSpawn.position, cascadoSpawn.rotation); 
 				var explo = (GameObject)Instantiate(efecto, cascadoSpawn.position, cascadoSpawn.rotation); 
-				explo.GetComponent<Animator>().SetInteger("efect",efect);
-				Destroy(explo, 2.0f);
 			}
 			salud -= 50;
 
@@ -212,11 +225,15 @@ public class EnemyMetra : MonoBehaviour {
 		}
 		if(col.gameObject.tag == "explo" && vivo)
 		{
-			vivo = false;
+			if(PlayerPrefs.GetInt("violencia") == 1)
+			{
+				explocion = true;
+			}
+			/*vivo = false;
 			Instantiate(carne, cascadoSpawn.position, cascadoSpawn.rotation);
 			GetComponent<Rigidbody>().AddForce(transform.right * Random.Range(500,-500));
 			GetComponent<Rigidbody>().velocity = (Vector2.up * Random.Range(10,25));
-			animator.SetInteger("muerte", 3);
+			animator.SetInteger("muerte", 3);*/
 			salud -= 50;
 
 			var letras = (GameObject)Instantiate(textos, new Vector3(transform.position.x, transform.position.y+9,transform.position.z), transform.rotation);
